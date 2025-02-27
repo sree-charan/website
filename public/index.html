@@ -1,0 +1,1464 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sree Charan Reddy</title>
+    <link rel="icon" href="assets/image.png" type="image/png">
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="css/themes.css">
+    <link rel="stylesheet" href="css/responsive.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r134/three.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/gsap@3.11.5/dist/gsap.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/gsap@3.11.5/dist/ScrollTrigger.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/particles.js@2.0.0/particles.min.js"></script>
+</head>
+<body>
+    <div id="loading-screen">
+        <div class="loader"></div>
+        <div class="loader-text">Initializing Experience</div>
+        <div class="loader-progress">
+            <div class="progress-bar"></div>
+        </div>
+    </div>
+
+    <div id="theme-info" class="theme-notification">
+        <div class="theme-icon"></div>
+        <div class="theme-name"></div>
+    </div>
+
+
+    <nav>
+        <div class="logo">SR</div>
+        <div class="menu-toggle">
+            <div class="bar"></div>
+            <div class="bar"></div>
+            <div class="bar"></div>
+        </div>
+        <ul class="nav-links">
+            <li><a href="#home" class="nav-link">Home</a></li>
+            <li><a href="#about" class="nav-link">About</a></li>
+            <li><a href="#skills" class="nav-link">Skills</a></li>
+            <li><a href="#experience" class="nav-link">Experience</a></li>
+            <li><a href="#projects" class="nav-link">Projects</a></li>
+            <li><a href="#research" class="nav-link">Research</a></li>
+            <li><a href="#education" class="nav-link">Education</a></li>
+            <li><a href="#contact" class="nav-link">Contact</a></li>
+        </ul>
+    </nav>
+    
+
+    <main>
+        <!-- Home Section -->
+        <section id="home" class="section">
+            <div class="canvas-container">
+                <canvas id="background-canvas"></canvas>
+                <div id="particles-js"></div>
+            </div>
+            <div class="content">
+                <div class="hero-text">
+                    <h1 class="glitch" data-text="Sree Charan Reddy">Sree Charan Reddy</h1>
+                    <div class="typing-container">
+                        <span class="static-text">I'm a</span>
+                        <span class="dynamic-text"></span>
+                    </div>
+                    <p class="hero-description">Breaking, Building, and Securing Systems—That’s What I Do</p>
+                    <div class="cta-buttons">
+                        <a href="#contact" class="primary-btn">Get In Touch</a>
+                        <a href="#projects" class="secondary-btn">View Projects</a>
+                    </div>
+                </div>
+            </div>
+            <div class="scroll-indicator">
+                <div class="mouse">
+                    <div class="wheel"></div>
+                </div>
+                <div class="arrow">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
+            </div>
+        </section>
+
+        <!-- About Section -->
+        <section id="about" class="section">
+            <div class="section-header">
+                <h2>About Me</h2>
+                <div class="underline"></div>
+            </div>
+            <div class="content about-content">
+                <div class="about-image">
+                    <div class="image-container">
+                        <div class="image-3d-container">
+                            <img src="assets/pic.jpg" alt="Sree Charan Reddy">
+                        </div>
+                    </div>
+                </div>
+                <div class="about-text">
+                    <p>A passionate Software     Engineer focused on full-stack development, cybersecurity, and AI/ML. I turn complex problems into seamless solutions through clean, efficient code.
+                    Driven by automation and innovation, I thrive in dynamic teams and tackle projects that make a real impact.</p>
+                    <div class="personal-info">
+                        <div class="info-item">
+                            <span class="info-label">Name:</span>
+                            <span class="info-value">Sree Charan Reddy</span>
+                        </div>
+                        <div class="info-item">
+                            <span class="info-label">Location:</span>
+                            <span class="info-value">Chicago, IL</span>
+                        </div>
+                        <div class="info-item">
+                            <span class="info-label">Email:</span>
+                            <span class="info-value">reach@sreecharan.in</span>
+                        </div>
+                        <!-- <div class="info-item">
+                            <span class="info-label">Phone:</span>
+                            <span class="info-value">+1 XXX-XXX-XXXX</span>
+                        </div> -->
+                    </div>
+                    <div class="social-links">
+                        <a href="https://linkedin.com/in/sreecharanreddy" target="_blank" class="social-icon"><i class="fab fa-linkedin"></i></a>
+                        <a href="https://github.com/sree-charan" target="_blank" class="social-icon"><i class="fab fa-github"></i></a>
+                        <a href="mailto:reach@sreecharan.in" class="social-icon"><i class="far fa-envelope"></i></a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Skills Section -->
+        <section id="skills" class="section">
+            <div class="section-header">
+                <h2>Stuff I Know That Gets Things Done</h2>
+                <div class="underline"></div>
+            </div>
+            <div class="content skills-content">
+                <div class="skill-category">
+                    <h3>Programming Languages</h3>
+                    <div class="skills-container">
+                        <div class="skill-item" data-skill="Python">
+                            <div class="skill-icon">
+                                <i class="fab fa-python"></i>
+                            </div>
+                            <div class="skill-info">
+                                <h4>Python</h4>
+                                <div class="skill-bar">
+                                    <div class="skill-level" style="width: 90%"></div>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="skill-item" data-skill="Java">
+                            <div class="skill-icon">
+                                <i class="fab fa-java"></i>
+                            </div>
+                            <div class="skill-info">
+                                <h4>Java</h4>
+                                <div class="skill-bar">
+                                    <div class="skill-level" style="width: 80%"></div>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="skill-item" data-skill="C">
+                            <div class="skill-icon">
+                                <i class="fas fa-code"></i>
+                            </div>
+                            <div class="skill-info">
+                                <h4>C</h4>
+                                <div class="skill-bar">
+                                    <div class="skill-level" style="width: 75%"></div>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="skill-item" data-skill="JavaScript">
+                            <div class="skill-icon">
+                                <i class="fab fa-js"></i>
+                            </div>
+                            <div class="skill-info">
+                                <h4>JavaScript</h4>
+                                <div class="skill-bar">
+                                    <div class="skill-level" style="width: 85%"></div>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="skill-item" data-skill="Bash">
+                            <div class="skill-icon">
+                                <i class="fas fa-terminal"></i>
+                            </div>
+                            <div class="skill-info">
+                                <h4>Bash</h4>
+                                <div class="skill-bar">
+                                    <div class="skill-level" style="width: 80%"></div>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="skill-item" data-skill="TypeScript">
+                            <div class="skill-icon">
+                                <i class="fab fa-js-square"></i>
+                            </div>
+                            <div class="skill-info">
+                                <h4>TypeScript</h4>
+                                <div class="skill-bar">
+                                    <div class="skill-level" style="width: 80%"></div>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="skill-item" data-skill="PHP">
+                            <div class="skill-icon">
+                                <i class="fab fa-php"></i>
+                            </div>
+                            <div class="skill-info">
+                                <h4>PHP</h4>
+                                <div class="skill-bar">
+                                    <div class="skill-level" style="width: 80%"></div>
+                                </div>
+                            </div>
+                        </div>
+                        
+                    </div>
+                </div>
+                
+                <div class="skill-category">
+                    <h3>Web Development</h3>
+                    <div class="skills-container">
+                        <div class="skill-item" data-skill="HTML5">
+                            <div class="skill-icon">
+                                <i class="fab fa-html5"></i>
+                            </div>
+                            <div class="skill-info">
+                                <h4>HTML5</h4>
+                                <div class="skill-bar">
+                                    <div class="skill-level" style="width: 90%"></div>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="skill-item" data-skill="CSS3">
+                            <div class="skill-icon">
+                                <i class="fab fa-css3-alt"></i>
+                            </div>
+                            <div class="skill-info">
+                                <h4>CSS3</h4>
+                                <div class="skill-bar">
+                                    <div class="skill-level" style="width: 85%"></div>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="skill-item" data-skill="jQuery">
+                            <div class="skill-icon">
+                                <i class="fab fa-camera"></i>
+                            </div>
+                            <div class="skill-info">
+                                <h4>jQuery</h4>
+                                <div class="skill-bar">
+                                    <div class="skill-level" style="width: 80%"></div>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="skill-item" data-skill="React">
+                            <div class="skill-icon">
+                                <i class="fab fa-react"></i>
+                            </div>
+                            <div class="skill-info">
+                                <h4>React</h4>
+                                <div class="skill-bar">
+                                    <div class="skill-level" style="width: 85%"></div>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="skill-item" data-skill="Angular">
+                            <div class="skill-icon">
+                                <i class="fab fa-angular"></i>
+                            </div>
+                            <div class="skill-info">
+                                <h4>Angular</h4>
+                                <div class="skill-bar">
+                                    <div class="skill-level" style="width: 80%"></div>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="skill-item" data-skill="Vue.js">
+                            <div class="skill-icon">
+                                <i class="fab fa-vuejs"></i>
+                            </div>
+                            <div class="skill-info">
+                                <h4>Vue.js</h4>
+                                <div class="skill-bar">
+                                    <div class="skill-level" style="width: 75%"></div>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="skill-item" data-skill="RESTful APIs">
+                            <div class="skill-icon">
+                                <i class="fas fa-plug"></i>
+                            </div>
+                            <div class="skill-info">
+                                <h4>RESTful APIs</h4>
+                                <div class="skill-bar">
+                                    <div class="skill-level" style="width: 85%"></div>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="skill-item" data-skill="WebSockets">
+                            <div class="skill-icon">
+                                <i class="fas fa-broadcast-tower"></i>
+                            </div>
+                            <div class="skill-info">
+                                <h4>WebSockets</h4>
+                                <div class="skill-bar">
+                                    <div class="skill-level" style="width: 75%"></div>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="skill-item" data-skill="Node.js">
+                            <div class="skill-icon">
+                                <i class="fab fa-node"></i>
+                            </div>
+                            <div class="skill-info">
+                                <h4>Node.js</h4>
+                                <div class="skill-bar">
+                                    <div class="skill-level" style="width: 80%"></div>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="skill-item" data-skill="Flask">
+                            <div class="skill-icon">
+                                <i class="fab fa-python"></i>
+                            </div>
+                            <div class="skill-info">
+                                <h4>Flask</h4>
+                                <div class="skill-bar">
+                                    <div class="skill-level" style="width: 80%"></div>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="skill-item" data-skill="Django">
+                            <div class="skill-icon">
+                                <i class="fab fa-python"></i>
+                            </div>
+                            <div class="skill-info">
+                                <h4>Django</h4>
+                                <div class="skill-bar">
+                                    <div class="skill-level" style="width: 85%"></div>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="skill-item" data-skill="FastAPI">
+                            <div class="skill-icon">
+                                <i class="fas fa-code"></i>
+                            </div>
+                            <div class="skill-info">
+                                <h4>FastAPI</h4>
+                                <div class="skill-bar">
+                                    <div class="skill-level" style="width: 75%"></div>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="skill-item" data-skill="Nginx">
+                            <div class="skill-icon">
+                                <i class="fas fa-server"></i>
+                            </div>
+                            <div class="skill-info">
+                                <h4>Nginx</h4>
+                                <div class="skill-bar">
+                                    <div class="skill-level" style="width: 80%"></div>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="skill-item" data-skill="Apache">
+                            <div class="skill-icon">
+                                <i class="fas fa-server"></i>
+                            </div>
+                            <div class="skill-info">
+                                <h4>Apache</h4>
+                                <div class="skill-bar">
+                                    <div class="skill-level" style="width: 80%"></div>
+                                </div>
+                            </div>
+                        </div>                        
+                    </div>
+                </div>
+                
+                <div class="skill-category">
+                    <h3>Database & Cloud</h3>
+                    <div class="skills-container">
+                        <div class="skill-item" data-skill="MySQL">
+                            <div class="skill-icon">
+                                <i class="fas fa-database"></i>
+                            </div>
+                            <div class="skill-info">
+                                <h4>MySQL</h4>
+                                <div class="skill-bar">
+                                    <div class="skill-level" style="width: 85%"></div>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="skill-item" data-skill="PostgreSQL">
+                            <div class="skill-icon">
+                                <i class="fas fa-database"></i>
+                            </div>
+                            <div class="skill-info">
+                                <h4>PostgreSQL</h4>
+                                <div class="skill-bar">
+                                    <div class="skill-level" style="width: 80%"></div>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="skill-item" data-skill="MongoDB">
+                            <div class="skill-icon">
+                                <i class="fas fa-database"></i>
+                            </div>
+                            <div class="skill-info">
+                                <h4>MongoDB</h4>
+                                <div class="skill-bar">
+                                    <div class="skill-level" style="width: 80%"></div>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="skill-item" data-skill="Redis">
+                            <div class="skill-icon">
+                                <i class="fas fa-database"></i>
+                            </div>
+                            <div class="skill-info">
+                                <h4>Redis</h4>
+                                <div class="skill-bar">
+                                    <div class="skill-level" style="width: 75%"></div>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="skill-item" data-skill="AWS">
+                            <div class="skill-icon">
+                                <i class="fab fa-aws"></i>
+                            </div>
+                            <div class="skill-info">
+                                <h4>AWS</h4>
+                                <div class="skill-bar">
+                                    <div class="skill-level" style="width: 85%"></div>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="skill-item" data-skill="Google Cloud Platform">
+                            <div class="skill-icon">
+                                <i class="fab fa-google"></i>
+                            </div>
+                            <div class="skill-info">
+                                <h4>Google Cloud Platform</h4>
+                                <div class="skill-bar">
+                                    <div class="skill-level" style="width: 80%"></div>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="skill-item" data-skill="Microsoft Azure">
+                            <div class="skill-icon">
+                                <i class="fab fa-microsoft"></i>
+                            </div>
+                            <div class="skill-info">
+                                <h4>Microsoft Azure</h4>
+                                <div class="skill-bar">
+                                    <div class="skill-level" style="width: 75%"></div>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="skill-item" data-skill="Firebase">
+                            <div class="skill-icon">
+                                <i class="fab fa-firebase"></i>
+                            </div>
+                            <div class="skill-info">
+                                <h4>Firebase</h4>
+                                <div class="skill-bar">
+                                    <div class="skill-level" style="width: 80%"></div>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="skill-item" data-skill="Docker">
+                            <div class="skill-icon">
+                                <i class="fab fa-docker"></i>
+                            </div>
+                            <div class="skill-info">
+                                <h4>Docker</h4>
+                                <div class="skill-bar">
+                                    <div class="skill-level" style="width: 75%"></div>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="skill-item" data-skill="Kubernetes">
+                            <div class="skill-icon">
+                                <i class="fab fa-kubernetes"></i>
+                            </div>
+                            <div class="skill-info">
+                                <h4>Kubernetes</h4>
+                                <div class="skill-bar">
+                                    <div class="skill-level" style="width: 70%"></div>
+                                </div>
+                            </div>
+                        </div>                        
+                    </div>
+                </div>
+                
+                <div class="skill-category">
+                    <h3>AI/ML & Other Tools</h3>
+                    <div class="skills-container">
+                        <div class="skill-item" data-skill="TensorFlow">
+                            <div class="skill-icon">
+                                <i class="fab fa-tensorflow"></i>
+                            </div>
+                            <div class="skill-info">
+                                <h4>TensorFlow</h4>
+                                <div class="skill-bar">
+                                    <div class="skill-level" style="width: 85%"></div>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="skill-item" data-skill="PyTorch">
+                            <div class="skill-icon">
+                                <i class="fab fa-pytorch"></i>
+                            </div>
+                            <div class="skill-info">
+                                <h4>PyTorch</h4>
+                                <div class="skill-bar">
+                                    <div class="skill-level" style="width: 80%"></div>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="skill-item" data-skill="Keras">
+                            <div class="skill-icon">
+                                <i class="fab fa-python"></i>
+                            </div>
+                            <div class="skill-info">
+                                <h4>Keras</h4>
+                                <div class="skill-bar">
+                                    <div class="skill-level" style="width: 80%"></div>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="skill-item" data-skill="Hugging Face">
+                            <div class="skill-icon">
+                                <i class="fas fa-brain"></i>
+                            </div>
+                            <div class="skill-info">
+                                <h4>Hugging Face</h4>
+                                <div class="skill-bar">
+                                    <div class="skill-level" style="width: 85%"></div>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="skill-item" data-skill="LangChain">
+                            <div class="skill-icon">
+                                <i class="fas fa-brain"></i>
+                            </div>
+                            <div class="skill-info">
+                                <h4>LangChain</h4>
+                                <div class="skill-bar">
+                                    <div class="skill-level" style="width: 75%"></div>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="skill-item" data-skill="OpenCV">
+                            <div class="skill-icon">
+                                <i class="fas fa-camera"></i>
+                            </div>
+                            <div class="skill-info">
+                                <h4>OpenCV</h4>
+                                <div class="skill-bar">
+                                    <div class="skill-level" style="width: 80%"></div>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="skill-item" data-skill="spaCy">
+                            <div class="skill-icon">
+                                <i class="fas fa-language"></i>
+                            </div>
+                            <div class="skill-info">
+                                <h4>spaCy</h4>
+                                <div class="skill-bar">
+                                    <div class="skill-level" style="width: 75%"></div>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="skill-item" data-skill="Scikit-Learn">
+                            <div class="skill-icon">
+                                <i class="fas fa-robot"></i>
+                            </div>
+                            <div class="skill-info">
+                                <h4>Scikit-Learn</h4>
+                                <div class="skill-bar">
+                                    <div class="skill-level" style="width: 85%"></div>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="skill-item" data-skill="XGBoost">
+                            <div class="skill-icon">
+                                <i class="fas fa-robot"></i>
+                            </div>
+                            <div class="skill-info">
+                                <h4>XGBoost</h4>
+                                <div class="skill-bar">
+                                    <div class="skill-level" style="width: 80%"></div>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="skill-item" data-skill="LightGBM">
+                            <div class="skill-icon">
+                                <i class="fas fa-robot"></i>
+                            </div>
+                            <div class="skill-info">
+                                <h4>LightGBM</h4>
+                                <div class="skill-bar">
+                                    <div class="skill-level" style="width: 75%"></div>
+                                </div>
+                            </div>
+                        </div>                        
+                </div>
+            </div>
+
+
+            <div class="skill-category">
+                <h3>Cybersecurity & Networking</h3>
+                <div class="skills-container">
+                    <div class="skill-item" data-skill="Kali Linux">
+                        <div class="skill-icon">
+                            <i class="fas fa-laptop-code"></i>
+                        </div>
+                        <div class="skill-info">
+                            <h4>Kali Linux</h4>
+                            <div class="skill-bar">
+                                <div class="skill-level" style="width: 85%"></div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="skill-item" data-skill="Wireshark">
+                        <div class="skill-icon">
+                            <i class="fas fa-wifi"></i>
+                        </div>
+                        <div class="skill-info">
+                            <h4>Wireshark</h4>
+                            <div class="skill-bar">
+                                <div class="skill-level" style="width: 80%"></div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="skill-item" data-skill="Burp Suite">
+                        <div class="skill-icon">
+                            <i class="fas fa-shield-alt"></i>
+                        </div>
+                        <div class="skill-info">
+                            <h4>Burp Suite</h4>
+                            <div class="skill-bar">
+                                <div class="skill-level" style="width: 80%"></div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="skill-item" data-skill="Metasploit">
+                        <div class="skill-icon">
+                            <i class="fas fa-user-shield"></i>
+                        </div>
+                        <div class="skill-info">
+                            <h4>Metasploit</h4>
+                            <div class="skill-bar">
+                                <div class="skill-level" style="width: 75%"></div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="skill-item" data-skill="Nmap">
+                        <div class="skill-icon">
+                            <i class="fas fa-search"></i>
+                        </div>
+                        <div class="skill-info">
+                            <h4>Nmap</h4>
+                            <div class="skill-bar">
+                                <div class="skill-level" style="width: 80%"></div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="skill-item" data-skill="Snort">
+                        <div class="skill-icon">
+                            <i class="fas fa-bell"></i>
+                        </div>
+                        <div class="skill-info">
+                            <h4>Snort</h4>
+                            <div class="skill-bar">
+                                <div class="skill-level" style="width: 75%"></div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="skill-item" data-skill="OpenVAS">
+                        <div class="skill-icon">
+                            <i class="fas fa-shield-alt"></i>
+                        </div>
+                        <div class="skill-info">
+                            <h4>OpenVAS</h4>
+                            <div class="skill-bar">
+                                <div class="skill-level" style="width: 70%"></div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="skill-item" data-skill="Nessus">
+                        <div class="skill-icon">
+                            <i class="fas fa-shield-alt"></i>
+                        </div>
+                        <div class="skill-info">
+                            <h4>Nessus</h4>
+                            <div class="skill-bar">
+                                <div class="skill-level" style="width: 80%"></div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="skill-item" data-skill="John the Ripper">
+                        <div class="skill-icon">
+                            <i class="fas fa-key"></i>
+                        </div>
+                        <div class="skill-info">
+                            <h4>John the Ripper</h4>
+                            <div class="skill-bar">
+                                <div class="skill-level" style="width: 75%"></div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="skill-item" data-skill="Aircrack-ng">
+                        <div class="skill-icon">
+                            <i class="fas fa-wifi"></i>
+                        </div>
+                        <div class="skill-info">
+                            <h4>Aircrack-ng</h4>
+                            <div class="skill-bar">
+                                <div class="skill-level" style="width: 70%"></div>
+                            </div>
+                        </div>
+                    </div>
+    
+                    <div class="skill-item" data-skill="Autopsy">
+                        <div class="skill-icon">
+                            <i class="fas fa-search"></i>
+                        </div>
+                        <div class="skill-info">
+                            <h4>Autopsy</h4>
+                            <div class="skill-bar">
+                                <div class="skill-level" style="width: 80%"></div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="skill-item" data-skill="FTK Imager">
+                        <div class="skill-icon">
+                            <i class="fas fa-hdd"></i>
+                        </div>
+                        <div class="skill-info">
+                            <h4>FTK Imager</h4>
+                            <div class="skill-bar">
+                                <div class="skill-level" style="width: 75%"></div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="skill-item" data-skill="Sleuth Kit">
+                        <div class="skill-icon">
+                            <i class="fas fa-search"></i>
+                        </div>
+                        <div class="skill-info">
+                            <h4>Sleuth Kit</h4>
+                            <div class="skill-bar">
+                                <div class="skill-level" style="width: 80%"></div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="skill-item" data-skill="X1 Social Discovery">
+                        <div class="skill-icon">
+                            <i class="fas fa-users"></i>
+                        </div>
+                        <div class="skill-info">
+                            <h4>X1 Social Discovery</h4>
+                            <div class="skill-bar">
+                                <div class="skill-level" style="width: 70%"></div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="skill-item" data-skill="EnCase Forensic">
+                        <div class="skill-icon">
+                            <i class="fas fa-hdd"></i>
+                        </div>
+                        <div class="skill-info">
+                            <h4>EnCase Forensic</h4>
+                            <div class="skill-bar">
+                                <div class="skill-level" style="width: 85%"></div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="skill-item" data-skill="Cellebrite UFED">
+                        <div class="skill-icon">
+                            <i class="fas fa-mobile-alt"></i>
+                        </div>
+                        <div class="skill-info">
+                            <h4>Cellebrite UFED</h4>
+                            <div class="skill-bar">
+                                <div class="skill-level" style="width: 80%"></div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="skill-item" data-skill="Magnet AXIOM">
+                        <div class="skill-icon">
+                            <i class="fas fa-magnet"></i>
+                        </div>
+                        <div class="skill-info">
+                            <h4>Magnet AXIOM</h4>
+                            <div class="skill-bar">
+                                <div class="skill-level" style="width: 75%"></div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="skill-item" data-skill="OSForensics">
+                        <div class="skill-icon">
+                            <i class="fas fa-laptop-code"></i>
+                        </div>
+                        <div class="skill-info">
+                            <h4>OSForensics</h4>
+                            <div class="skill-bar">
+                                <div class="skill-level" style="width: 80%"></div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="skill-item" data-skill="XRY">
+                        <div class="skill-icon">
+                            <i class="fas fa-mobile-alt"></i>
+                        </div>
+                        <div class="skill-info">
+                            <h4>XRY</h4>
+                            <div class="skill-bar">
+                                <div class="skill-level" style="width: 75%"></div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="skill-item" data-skill="Wireshark">
+                        <div class="skill-icon">
+                            <i class="fas fa-wifi"></i>
+                        </div>
+                        <div class="skill-info">
+                            <h4>Wireshark</h4>
+                            <div class="skill-bar">
+                                <div class="skill-level" style="width: 85%"></div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                </div>
+            </div>
+        </div>
+        </section>
+
+        <!-- Experience Section -->
+        <section id="experience" class="section">
+            <div class="section-header">
+                <h2>Companies I’ve Helped Level Up</h2>
+                <div class="underline"></div>
+            </div>
+            <div class="content">
+                <div class="timeline">
+                    <div class="timeline-item">
+                        <div class="timeline-dot"></div>
+                        <div class="timeline-date">Apr 2022 - May 2023</div>
+                        <div class="timeline-content">
+                            <h3>Associate Software Engineer (Machine Learning & Optimization)</h3>
+                            <h4>Infor India Pvt. Ltd.- Hyderabad, India</h4>
+                            <ul>
+                                <li>Developed and deployed machine learning models that drove a 40% reduction in operational costs.</li>
+                                <li>Integrated advanced machine learning functionalities into software applications, enhancing workflows and boosting productivity.</li>
+                                <li>Actively participated in code reviews and ensured comprehensive documentation, promoting best practices within the team.</li>
+                            </ul>                              
+                        </div>
+                    </div>
+                    <div class="timeline-item">
+                        <div class="timeline-dot"></div>
+                        <div class="timeline-date">Sep 2019 - May 2022</div>
+                        <div class="timeline-content">
+                            <h3>Team Lead (Full Stack Development)</h3>
+                            <h4>GCTCPortal- Hyderabad, India</h4>
+                            <ul>
+                                <li>Improved the GCTCPortal, boosting speed and usability for over 3,500 users.</li>
+                                <li>Designed a responsive, user-friendly interface using JavaScript, HTML, and CSS, optimizing portal performance.</li>
+                                <li>Guided junior developers on best coding practices, ensuring a clean and maintainable codebase.</li>
+                            </ul>                              
+                        </div>
+                    </div>
+                    <div class="timeline-item">
+                        <div class="timeline-dot"></div>
+                        <div class="timeline-date">Jan 2022 - Apr 2022</div>
+                        <div class="timeline-content">
+                            <h3>Software Engineer Intern (Java & Angular)</h3>
+                            <h4>Accolite Digital- Hyderabad, India</h4>
+                            <ul>
+                                <li>Created a complaint resolution platform for FedEx, streamlining customer support processes for faster resolution.</li>
+                                <li>Developed secure APIs to ensure seamless data exchange between systems.</li>
+                                <li>Enhanced the backend architecture to improve scalability and overall system efficiency.</li>
+                                <li>Worked collaboratively with an Agile team to ensure timely delivery of new features.</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- Projects Section -->
+        <section id="projects" class="section">
+            <div class="section-header">
+                <h2>Tech I’ve Built (And Still Improving)</h2>
+                <div class="underline"></div>
+            </div>
+            <div class="content">
+                <div class="project-filters">
+                    <button class="filter-btn active" data-filter="all">All</button>
+                    <button class="filter-btn" data-filter="ai">AI/ML</button>
+                    <button class="filter-btn" data-filter="web">Web Dev</button>
+                    <button class="filter-btn" data-filter="security">Security</button>
+                </div>
+                <div class="projects-grid">
+                    <div class="project-card" data-category="security">
+                        <div class="project-image">
+                            <img src="assets/1.png" alt="OSINT Web Application">
+                        </div>
+                        <div class="project-content">
+                            <h3>OSINT Web Application for Social Media Intelligence</h3>
+                            <p>Created an OSINT tool to analyze public data from Instagram, Twitter, Reddit, and YouTube. Integrated keyword tracking, user behavior analysis, and sentiment detection for efficient research. Developed interactive dashboards for investigators to visualize trends and monitor user activity.</p>
+                            <div class="project-tech">
+                                <span>Python</span>
+                                <span>Flask</span>
+                                <span>API Integration</span>
+                            </div>
+                            <div class="project-links">
+                                <a href="#" class="project-link"><i class="fab fa-github"></i></a>
+                                <a href="#" class="project-link"><i class="fas fa-external-link-alt"></i></a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="project-card" data-category="security">
+                        <div class="project-image">
+                            <img src="assets/2.png" alt="AI Cybersecurity Threat Detection">
+                        </div>
+                        <div class="project-content">
+                            <h3>AI for Cybersecurity: Threat Detection using ML</h3>
+                            <p>Built an AI-driven Intrusion Detection System (IDS) to detect malicious network traffic. Achieved ~90% accuracy in identifying anomalies through large-scale network log analysis. Used anomaly detection algorithms to uncover zero-day threats.</p>
+                            <div class="project-tech">
+                                <span>Python</span>
+                                <span>Scikit-learn</span>
+                                <span>TensorFlow</span>
+                            </div>
+                            <div class="project-links">
+                                <a href="#" class="project-link"><i class="fab fa-github"></i></a>
+                                <a href="#" class="project-link"><i class="fas fa-external-link-alt"></i></a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="project-card" data-category="security">
+                        <div class="project-image">
+                            <img src="assets/3.png" alt="Forensic Investigation & Evidence Analysis">
+                        </div>
+                        <div class="project-content">
+                            <h3>Forensic Investigation & Evidence Analysis</h3>
+                            <p>Performed digital forensic investigations on USB drives, hard disks, and email headers. Utilized Wireshark to spot suspicious network traffic and unauthorized data transmissions. Preserved evidence integrity and produced forensic reports in compliance with legal standards.</p>
+                            <div class="project-tech">
+                                <span>Autopsy</span>
+                                <span>Wireshark</span>
+                                <span>FTK Imager</span>
+                            </div>
+                            <div class="project-links">
+                                <a href="#" class="project-link"><i class="fab fa-github"></i></a>
+                                <a href="#" class="project-link"><i class="fas fa-external-link-alt"></i></a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="project-card" data-category="security">
+                        <div class="project-image">
+                            <img src="assets/4.png" alt="Active Cyber Defense & Incident Response">
+                        </div>
+                        <div class="project-content">
+                            <h3>Active Cyber Defense & Incident Response Simulation</h3>
+                            <p>Conducted a Red-Team/Blue-Team simulation to mimic real-world cyberattacks. Integrated Splunk dashboards for real-time intrusion detection and alert generation. Leveraged the MITRE ATT&CK framework to enhance threat hunting and incident response.</p>
+                            <div class="project-tech">
+                                <span>Splunk</span>
+                                <span>SIEM</span>
+                                <span>MITRE ATT&CK</span>
+                            </div>
+                            <div class="project-links">
+                                <a href="#" class="project-link"><i class="fab fa-github"></i></a>
+                                <a href="#" class="project-link"><i class="fas fa-external-link-alt"></i></a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="project-card" data-category="ai">
+                        <div class="project-image">
+                            <img src="assets/5.png" alt="Text Humanizer Tool">
+                        </div>
+                        <div class="project-content">
+                            <h3>Text Humanizer – AI-Powered Text Refinement Tool</h3>
+                            <p>Created an NLP-based tool for improving text readability and professionalism. Implemented semantic analysis and synonym recommendations to refine security documentation. Added grammatical error correction, resulting in clear and natural-sounding outputs.</p>
+                            <div class="project-tech">
+                                <span>Python</span>
+                                <span>NLP (NLTK, WordNet)</span>
+                            </div>
+                            <div class="project-links">
+                                <a href="#" class="project-link"><i class="fab fa-github"></i></a>
+                                <a href="#" class="project-link"><i class="fas fa-external-link-alt"></i></a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="project-card" data-category="ai">
+                        <div class="project-image">
+                            <img src="assets/6.png" alt="Text-to-Video AI Generator">
+                        </div>
+                        <div class="project-content">
+                            <h3>Text-to-Video AI Generator</h3>
+                            <p>Developed a deep-learning model to transform plain text into AI-generated video content. Integrated speech synthesis, background imagery, and animated transitions for engaging output. Optimized for large-scale content generation with minimal performance bottlenecks.</p>
+                            <div class="project-tech">
+                                <span>Python</span>
+                                <span>Flask</span>
+                                <span>Deep Learning</span>
+                            </div>
+                            <div class="project-links">
+                                <a href="#" class="project-link"><i class="fab fa-github"></i></a>
+                                <a href="#" class="project-link"><i class="fas fa-external-link-alt"></i></a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="project-card" data-category="ai">
+                        <div class="project-image">
+                            <img src="assets/10.png" alt="AI Blog Generator">
+                        </div>
+                        <div class="project-content">
+                            <h3>AI Blog Generator</h3>
+                            <p>Built an AI-powered blogging system that creates complete blog posts on specified topics. Utilized Google’s GenAI and Blogger API for automated publishing and content updates. Incorporated Pexels API to fetch relevant images, ensuring visually appealing posts.</p>
+                            <div class="project-tech">
+                                <span>Python</span>
+                                <span>Flask</span>
+                                <span>Google API</span>
+                                <span>Pexels API</span>
+                            </div>
+                            <div class="project-links">
+                                <a href="#" class="project-link"><i class="fab fa-github"></i></a>
+                                <a href="#" class="project-link"><i class="fas fa-external-link-alt"></i></a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="project-card" data-category="ai">
+                        <div class="project-image">
+                            <img src="assets/7.png" alt="Autonomeus AI System">
+                        </div>
+                        <div class="project-content">
+                            <h3>Autonomeus – AI Self-Governance System (In Progress)</h3>
+                            <p>Researching an autonomous AI framework capable of self-improvement via feedback analysis. Exploring self-learning algorithms for minimal human intervention. Investigating AI-driven decision-making for business workflow automation and AI-based journalism.</p>
+                            <div class="project-tech">
+                                <span>AI Development</span>
+                                <span>Automation</span>
+                                <span>Content Generation</span>
+                            </div>
+                            <div class="project-links">
+                                <a href="#" class="project-link"><i class="fab fa-github"></i></a>
+                                <a href="#" class="project-link"><i class="fas fa-external-link-alt"></i></a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="project-card" data-category="web">
+                        <div class="project-image">
+                            <img src="assets/8.png" alt="SyncWrite Text Editor">
+                        </div>
+                        <div class="project-content">
+                            <h3>SyncWrite – Real-Time Collaborative Text Editor</h3>
+                            <p>Developed a multi-user text editor with simultaneous, real-time editing. Implemented role-based access control for enhanced document security. Optimized synchronization to reduce latency and improve the user experience.</p>
+                            <div class="project-tech">
+                                <span>Firebase</span>
+                                <span>JavaScript</span>
+                                <span>HTML</span>
+                                <span>CSS</span>
+                            </div>
+                            <div class="project-links">
+                                <a href="#" class="project-link"><i class="fab fa-github"></i></a>
+                                <a href="#" class="project-link"><i class="fas fa-external-link-alt"></i></a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="project-card" data-category="web">
+                        <div class="project-image">
+                            <img src="assets/9.png" alt="CertifyMe Certificate System">
+                        </div>
+                        <div class="project-content">
+                            <h3>CertifyMe – Automated Certificate Generation System</h3>
+                            <p>Designed a secure platform to generate, sign, and distribute event certificates. Leveraged Google Apps Script to incorporate dynamic data fields and prevent tampering. Streamlined bulk certificate issuance, expediting large-scale events.</p>
+                            <div class="project-tech">
+                                <span>Google Apps Script</span>
+                                <span>JavaScript</span>
+                                <span>HTML</span>
+                                <span>CSS</span>
+                            </div>
+                            <div class="project-links">
+                                <a href="#" class="project-link"><i class="fab fa-github"></i></a>
+                                <a href="#" class="project-link"><i class="fas fa-external-link-alt"></i></a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="project-card" data-category="web">
+                        <div class="project-image">
+                            <img src="assets/13.png" alt="SafeTest COVID System">
+                        </div>
+                        <div class="project-content">
+                            <h3>SafeTest – COVID Management System</h3>
+                            <p>Created a secure portal for managing COVID test results, patient records, and lab reports. Implemented encryption and multi-role authentication for protected access. Centralized data to reduce turnaround times for retrieving and processing test results.</p>
+                            <div class="project-tech">
+                                <span>PHP</span>
+                                <span>MySQL</span>
+                                <span>HTML</span>
+                                <span>CSS</span>
+                            </div>
+                            <div class="project-links">
+                                <a href="#" class="project-link"><i class="fab fa-github"></i></a>
+                                <a href="#" class="project-link"><i class="fas fa-external-link-alt"></i></a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="project-card" data-category="web">
+                        <div class="project-image">
+                            <img src="assets/14.png" alt="Neura WhatsApp Bot">
+                        </div>
+                        <div class="project-content">
+                            <h3>Neura – WhatsApp Automation Bot</h3>
+                            <p>Built a WhatsApp bot for everyday automation tasks (media downloads, stickers/GIF generation, news, weather, etc.). Deployed modular commands, offering customizable workflows for personal and business needs.</p>
+                            <div class="project-tech">
+                                <span>TypeScript</span>
+                                <span>Node.js</span>
+                                <span>API Integration</span>
+                            </div>
+                            <div class="project-links">
+                                <a href="#" class="project-link"><i class="fab fa-github"></i></a>
+                                <a href="#" class="project-link"><i class="fas fa-external-link-alt"></i></a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="project-card" data-category="ai">
+                        <div class="project-image">
+                            <img src="assets/12.png" alt="ResuMagic Resume Generator">
+                        </div>
+                        <div class="project-content">
+                            <h3>AI-Powered Resume Generator</h3>
+                            <p>Built an AI-enabled resume generator for fast, user-friendly resume creation. Combined Google Forms for interactive data input and template-based formatting for ATS-friendly resumes. Ensured secure data handling, safeguarding user information throughout the generation process.</p>
+                            <div class="project-tech">
+                                <span>Google Apps Script</span>
+                                <span>JavaScript</span>
+                                <span>HTML</span>
+                            </div>
+                            <div class="project-links">
+                                <a href="#" class="project-link"><i class="fab fa-github"></i></a>
+                                <a href="#" class="project-link"><i class="fas fa-external-link-alt"></i></a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="project-card" data-category="security">
+                        <div class="project-image">
+                            <img src="assets/11.png" alt="Telegram Security Bot">
+                        </div>
+                        <div class="project-content">
+                            <h3>Telegram Security Bot</h3>
+                            <p>Developed a real-time cybersecurity alert bot to monitor and report active threats. Integrated threat intelligence feeds for instant security updates. Secured API handling and data transmission to prevent unauthorized bot access.</p>
+                            <div class="project-tech">
+                                <span>Python</span>
+                                <span>Flask</span>
+                                <span>API Integration</span>
+                            </div>
+                            <div class="project-links">
+                                <a href="#" class="project-link"><i class="fab fa-github"></i></a>
+                                <a href="#" class="project-link"><i class="fas fa-external-link-alt"></i></a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="project-card" data-category="web">
+                        <div class="project-image">
+                            <img src="assets/15.png" alt="OpenJobs Platform">
+                        </div>
+                        <div class="project-content">
+                            <h3>OpenJobs Platform</h3>
+                            <p>OpenJobs is an open-source job platform designed to connect job seekers and employers. It features core functionalities like user authentication and job management, with plans for advanced AI matching and employer tools. The platform aims to build a strong community through open-source contributions, while addressing scalability and data processing challenges.</p>
+                            <div class="project-tech">
+                                <span>FastAPI</span>
+                                <span>PostgreSQL</span>
+                                <span>Next.js</span>
+                                <span>TypeScript</span>
+                                <span>Tailwind CSS</span>
+                            </div>
+                            <div class="project-links">
+                                <a href="#" class="project-link"><i class="fab fa-github"></i></a>
+                                <a href="#" class="project-link"><i class="fas fa-external-link-alt"></i></a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="project-card" data-category="web">
+                        <div class="project-image">
+                            <img src="assets/16.png" alt="Personal Portfolio">
+                        </div>
+                        <div class="project-content">
+                            <h3>Personal Portfolio Website</h3>
+                            <p>Developed a dynamic and interactive personal portfolio to showcase my skills and projects. The portfolio features a modern design and incorporates 3D elements for an engaging user experience.</p>
+                            <div class="project-tech">
+                                <span>HTML</span>
+                                <span>JavaScript</span>
+                                <span>Three.js</span>
+                                <span>Tailwind CSS</span>
+                                <span>Bootstrap</span>
+                            </div>
+                            <div class="project-links">
+                                <a href="#" class="project-link"><i class="fab fa-github"></i></a>
+                                <a href="#" class="project-link"><i class="fas fa-external-link-alt"></i></a>
+                            </div>
+                        </div>
+                    </div>
+
+
+
+
+            </div>
+        </section>
+
+        <!-- Research Papers Section -->
+        <section id="research" class="section">
+            <div class="section-header">
+                <h2>Ideas, Theories, and Breakthroughs</h2>
+                <div class="underline"></div>
+            </div>
+            <div class="content">
+                <div class="papers-container">
+                    <div class="paper-card">
+                        <div class="paper-icon">
+                            <i class="fas fa-shield-alt"></i>
+                        </div>
+                        <div class="paper-content">
+                            <h3>Enhancing Cybersecurity in Blockchain Networks through Machine Learning</h3>
+                            <p>Explored AI-driven threat detection to mitigate blockchain attacks and reduce fraud in DeFi and NFTs.</p>
+                        </div>
+                    </div>
+                    <div class="paper-card">
+                        <div class="paper-icon">
+                            <i class="fas fa-bullhorn"></i>
+                        </div>
+                        <div class="paper-content">
+                            <h3>Unveiling the Dark Side of Social Media Algorithms</h3>
+                            <p>Investigated algorithmic manipulation and offered strategies to counter negative algorithmic influences on public discourse.</p>
+                        </div>
+                    </div>
+                    <div class="paper-card">
+                        <div class="paper-icon">
+                            <i class="fas fa-bug"></i>
+                        </div>
+                        <div class="paper-content">
+                            <h3>Dragonfly: A Deep Dive into a Nation-Sponsored Cyber Assault</h3>
+                            <p>Provided forensic evidence and strategies for mitigating APT threats from nation-sponsored attacks.</p>
+                        </div>
+                    </div>
+                    <div class="paper-card">
+                        <div class="paper-icon">
+                            <i class="fas fa-atom"></i>
+                        </div>
+                        <div class="paper-content">
+                            <h3>Impact of Quantum Computing on Database Encryption</h3>
+                            <p>Evaluated PQC methods and proposed strategies to future-proof database security against quantum threats.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Education Section -->
+        <section id="education" class="section">
+            <div class="section-header">
+                <h2>Studied Here, Built Everywhere</h2>
+                <div class="underline"></div>
+            </div>
+            <div class="content">
+                <div class="education-cards">
+                    <div class="education-card">
+                        <div class="education-icon">
+                            <i class="fas fa-graduation-cap"></i>
+                        </div>
+                        <div class="education-content">
+                            <h3>Master of Information Technology and Management</h3>
+                            <h4>Illinois Institute of Technology, Chicago, USA</h4>
+                            <p>Expected graduation: May 2025</p>
+                            <p>GPA: 3.9/4.0</p>
+                        </div>
+                    </div>
+                    <div class="education-card">
+                        <div class="education-icon">
+                            <i class="fas fa-graduation-cap"></i>
+                        </div>
+                        <div class="education-content">
+                            <h3>Bachelor of Technology in Computer Science and Engineering</h3>
+                            <h4>Jawaharlal Nehru Technological University, Hyderabad, India</h4>
+                            <p>Graduated: May 2022</p>
+                            <p>GPA: 8.0/10.0</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Contact Section -->
+        <section id="contact" class="section">
+            <div class="section-header">
+                <h2>Got a Problem? I’ve Got the Code.</h2>
+                <div class="underline"></div>
+            </div>
+            <div class="content">
+                <div class="contact-form">
+                    <form id="contact-form" action="https://docs.google.com/forms/u/0/d/e/1FAIpQLScX74qB7qH-Ianl0DTX_jgDwoxJpbI4OXvEWyB-olMUqY0dbw/formResponse" method="POST">
+                        <div class="form-group">
+                            <label for="name">Who Are You, Anyway?</label>
+                            <input type="text" id="name" name="entry.277584178" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="email">Can I get your Email?</label>
+                            <input type="email" id="email" name="entry.1181882465" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="message">Tell Me What’s Cooking?</label>
+                            <textarea id="message" name="entry.1117133604" required></textarea>
+                        </div>
+                        <button type="submit" class="primary-btn">Send it!</button>
+                    </form>
+                </div>
+            </div>
+        </section>
+    </main>
+
+
+
+    <footer>
+        <div class="footer-content">
+            <div class="footer-logo">SR</div>
+            <div class="footer-text">
+                <p>&copy; 2025 Sree Charan Reddy. All rights reserved.</p>
+            </div>
+            <div class="social-links">
+                <a href="https://linkedin.com/in/sreecharanreddy" target="_blank" class="social-icon"><i class="fab fa-linkedin"></i></a>
+                <a href="https://github.com/sree-charan" target="_blank" class="social-icon"><i class="fab fa-github"></i></a>
+                <a href="mailto:reach@sreecharan.in" class="social-icon"><i class="far fa-envelope"></i></a>
+            </div>
+        </div>
+    </footer>
+
+
+    <!-- Add this to your HTML, just before the closing body tag -->
+<div class="theme-toggle-sticky">
+    <div class="theme-toggle-icon">
+        <i class="fas fa-palette"></i>
+    </div>
+    <div class="theme-panel">
+        <div class="theme-panel-header">
+            <h3>Select Theme</h3>
+            <button class="theme-panel-close"><i class="fas fa-times"></i></button>
+        </div>
+        <div class="theme-options-container">
+            <div class="theme-option" data-theme="cyberpunk">
+                <div class="theme-preview cyberpunk-preview"></div>
+                <span>Cyberpunk</span>
+            </div>
+            <div class="theme-option" data-theme="minimalist">
+                <div class="theme-preview minimalist-preview"></div>
+                <span>Minimalist</span>
+            </div>
+            <div class="theme-option" data-theme="space">
+                <div class="theme-preview space-preview"></div>
+                <span>Space</span>
+            </div>
+            <div class="theme-option" data-theme="digital">
+                <div class="theme-preview digital-preview"></div>
+                <span>Digital</span>
+            </div>
+            <div class="theme-option" data-theme="surreal">
+                <div class="theme-preview surreal-preview"></div>
+                <span>Surreal</span>
+            </div>
+            <div class="theme-option" data-theme="neon-flux">
+                <div class="theme-preview neon-flux-preview"></div>
+                <span>Neon</span>
+            </div>
+            <div class="theme-option" data-theme="biomimicry">
+                <div class="theme-preview biomimicry-preview"></div>
+                <span>Biomimicry</span>
+            </div>
+            <div class="theme-option" data-theme="glassmorphism">
+                <div class="theme-preview glassmorphism-preview"></div>
+                <span>Glassmorphism</span>
+            </div>
+        </div>
+    </div>
+</div>
+
+    <script src="js/app.js"></script>
+    <script src="js/three-backgrounds.js"></script>
+    <script src="js/particles-config.js"></script>
+<!-- The core Firebase JS SDK is always required and must be listed first -->
+<script src="/__/firebase/7.20.0/firebase-app.js"></script>
+
+<!-- Initialize Firebase -->
+<script src="/__/firebase/init.js"></script>
+
+</body>
+</html>

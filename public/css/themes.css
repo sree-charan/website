@@ -1,0 +1,2105 @@
+/* Cyberpunk Theme */
+body.theme-cyberpunk {
+    --primary-color: #ff00ff;
+    --secondary-color: #00ffff;
+    --accent-color: #ff9900;
+    --text-color: #ffffff;
+    --light-text: #f4f4f4;
+    --dark-bg: #0a0a1e;
+    background-color: var(--dark-bg);
+    color: var(--text-color);
+}
+
+/* Navigation - Cyberpunk */
+body.theme-cyberpunk nav {
+    background-color: rgba(10, 10, 30, 0.8);
+    border-bottom: 1px solid var(--secondary-color);
+}
+
+body.theme-cyberpunk .nav-link {
+    color: var(--light-text);
+    text-shadow: 0 0 5px var(--secondary-color);
+}
+
+body.theme-cyberpunk .logo {
+    color: var(--accent-color);
+    text-shadow: 0 0 10px var(--accent-color);
+}
+
+/* Sections - Cyberpunk */
+body.theme-cyberpunk .section {
+    background: linear-gradient(to bottom, rgba(10, 10, 30, 0.9), rgba(10, 10, 30, 0.7));
+    border-bottom: 1px solid var(--secondary-color);
+}
+
+body.theme-cyberpunk .section-header h2 {
+    color: var(--secondary-color);
+    text-shadow: 0 0 10px var(--secondary-color);
+    font-family: 'Orbitron', sans-serif;
+    letter-spacing: 2px;
+}
+
+body.theme-cyberpunk .underline {
+    background: linear-gradient(90deg, transparent, var(--primary-color), transparent);
+    box-shadow: 0 0 10px var(--primary-color);
+    height: 2px;
+}
+
+/* About Section - Cyberpunk */
+body.theme-cyberpunk .about-content {
+    background-color: rgba(0, 0, 0, 0.5);
+    border: 1px solid var(--secondary-color);
+    border-radius: 5px;
+    padding: 20px;
+    box-shadow: 0 0 20px rgba(0, 255, 255, 0.3);
+}
+
+body.theme-cyberpunk .image-container {
+    border: 2px solid var(--secondary-color);
+    box-shadow: 0 0 15px var(--secondary-color);
+}
+
+body.theme-cyberpunk .personal-info .info-label {
+    color: var(--accent-color);
+}
+
+body.theme-cyberpunk .social-icon {
+    background: linear-gradient(45deg, var(--primary-color), var(--secondary-color));
+    box-shadow: 0 0 10px var(--secondary-color);
+}
+
+/* Skills Section - Cyberpunk */
+body.theme-cyberpunk .skill-item {
+    background-color: rgba(0, 0, 0, 0.7);
+    border: 1px solid var(--secondary-color);
+    box-shadow: 0 0 15px rgba(0, 255, 255, 0.2);
+}
+
+body.theme-cyberpunk .skill-icon {
+    background-color: rgba(0, 255, 255, 0.1);
+    color: var(--secondary-color);
+}
+
+body.theme-cyberpunk .skill-level {
+    background: linear-gradient(90deg, var(--primary-color), var(--secondary-color));
+    box-shadow: 0 0 10px var(--secondary-color);
+}
+
+/* Experience Section - Cyberpunk */
+body.theme-cyberpunk .timeline::before {
+    background: linear-gradient(to bottom, var(--primary-color), var(--secondary-color));
+    box-shadow: 0 0 10px var(--secondary-color);
+}
+
+body.theme-cyberpunk .timeline-dot {
+    background-color: var(--accent-color);
+    box-shadow: 0 0 10px var(--accent-color);
+}
+
+body.theme-cyberpunk .timeline-content {
+    background-color: rgba(0, 0, 0, 0.7);
+    border: 1px solid var(--secondary-color);
+    box-shadow: 0 0 15px rgba(0, 255, 255, 0.2);
+}
+
+body.theme-cyberpunk .timeline-date {
+    color: var(--accent-color);
+    text-shadow: 0 0 5px var(--accent-color);
+}
+
+/* Projects Section - Cyberpunk */
+body.theme-cyberpunk .filter-btn {
+    background-color: transparent;
+    border: 1px solid var(--secondary-color);
+    color: var(--secondary-color);
+}
+
+body.theme-cyberpunk .filter-btn.active, 
+body.theme-cyberpunk .filter-btn:hover {
+    background-color: var(--secondary-color);
+    color: var(--dark-bg);
+    box-shadow: 0 0 15px var(--secondary-color);
+}
+
+body.theme-cyberpunk .project-card {
+    background-color: rgba(0, 0, 0, 0.7);
+    border: 1px solid var(--secondary-color);
+    box-shadow: 0 0 15px rgba(0, 255, 255, 0.2);
+}
+
+body.theme-cyberpunk .project-card:hover {
+    box-shadow: 0 0 25px var(--secondary-color);
+}
+
+body.theme-cyberpunk .project-tech span {
+    background-color: rgba(0, 255, 255, 0.1);
+    border: 1px solid var(--secondary-color);
+    color: var(--secondary-color);
+}
+
+/* Research Papers - Cyberpunk */
+body.theme-cyberpunk .paper-card {
+    background-color: rgba(0, 0, 0, 0.7);
+    border: 1px solid var(--secondary-color);
+    box-shadow: 0 0 15px rgba(0, 255, 255, 0.2);
+}
+
+body.theme-cyberpunk .paper-icon {
+    background-color: rgba(0, 255, 255, 0.1);
+    color: var(--secondary-color);
+    box-shadow: 0 0 10px var(--secondary-color);
+}
+
+/* Education - Cyberpunk */
+body.theme-cyberpunk .education-card {
+    background-color: rgba(0, 0, 0, 0.7);
+    border: 1px solid var(--secondary-color);
+    box-shadow: 0 0 15px rgba(0, 255, 255, 0.2);
+}
+
+body.theme-cyberpunk .education-icon {
+    background-color: rgba(0, 255, 255, 0.1);
+    color: var(--secondary-color);
+    box-shadow: 0 0 10px var(--secondary-color);
+}
+
+/* Contact - Cyberpunk */
+body.theme-cyberpunk .contact-form {
+    background-color: rgba(0, 0, 0, 0.7);
+    border: 1px solid var(--secondary-color);
+    box-shadow: 0 0 20px rgba(0, 255, 255, 0.3);
+}
+
+body.theme-cyberpunk input, 
+body.theme-cyberpunk textarea {
+    background-color: rgba(0, 0, 0, 0.5);
+    border: 1px solid var(--secondary-color);
+    color: var(--light-text);
+}
+
+body.theme-cyberpunk input:focus, 
+body.theme-cyberpunk textarea:focus {
+    box-shadow: 0 0 10px var(--secondary-color);
+}
+
+/* Footer - Cyberpunk */
+body.theme-cyberpunk footer {
+    background-color: rgba(10, 10, 30, 0.9);
+    border-top: 1px solid var(--secondary-color);
+}
+
+
+
+
+
+
+
+/* Space Theme */
+body.theme-space {
+    --primary-color: #4361ee;
+    --secondary-color: #3a0ca3;
+    --accent-color: #7209b7;
+    --text-color: #f8f9fa;
+    --light-text: #e9ecef;
+    --dark-bg: #0b090a;
+    background-color: var(--dark-bg);
+    color: var(--text-color);
+    font-family: 'Exo 2', sans-serif;
+}
+
+/* Navigation - Space */
+body.theme-space nav {
+    background-color: rgba(11, 9, 10, 0.8);
+    border-bottom: 1px solid rgba(67, 97, 238, 0.3);
+    backdrop-filter: blur(10px);
+}
+
+body.theme-space .nav-link {
+    color: var(--light-text);
+    text-shadow: 0 0 5px var(--primary-color);
+}
+
+body.theme-space .logo {
+    color: var(--primary-color);
+    text-shadow: 0 0 10px var(--primary-color);
+}
+
+/* Sections - Space */
+body.theme-space .section {
+    background: linear-gradient(to bottom, rgba(11, 9, 10, 0.9), rgba(11, 9, 10, 0.7));
+    border-bottom: 1px solid rgba(67, 97, 238, 0.3);
+    position: relative;
+    overflow: hidden;
+}
+
+body.theme-space .section::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: radial-gradient(circle at center, transparent 0%, transparent 70%, rgba(67, 97, 238, 0.1) 100%);
+    z-index: 0;
+}
+
+body.theme-space .section-header h2 {
+    color: var(--primary-color);
+    text-shadow: 0 0 10px var(--primary-color);
+    font-weight: 600;
+    letter-spacing: 3px;
+}
+
+body.theme-space .underline {
+    background: linear-gradient(90deg, transparent, var(--accent-color), transparent);
+    box-shadow: 0 0 10px var(--accent-color);
+    height: 2px;
+}
+
+/* About Section - Space */
+body.theme-space .about-content {
+    background-color: rgba(0, 0, 0, 0.5);
+    border: 1px solid rgba(67, 97, 238, 0.3);
+    border-radius: 10px;
+    padding: 30px;
+    box-shadow: 0 0 20px rgba(67, 97, 238, 0.2);
+    backdrop-filter: blur(5px);
+}
+
+body.theme-space .image-container {
+    border: 2px solid var(--primary-color);
+    box-shadow: 0 0 15px var(--primary-color);
+    border-radius: 50%;
+    overflow: hidden;
+}
+
+body.theme-space .image-container img {
+    filter: brightness(1.1) contrast(1.1);
+}
+
+body.theme-space .personal-info .info-label {
+    color: var(--accent-color);
+    font-weight: 600;
+}
+
+body.theme-space .social-icon {
+    background: rgba(67, 97, 238, 0.2);
+    border: 1px solid var(--primary-color);
+    color: var(--primary-color);
+    box-shadow: 0 0 10px var(--primary-color);
+}
+
+body.theme-space .social-icon:hover {
+    background-color: var(--primary-color);
+    color: var(--dark-bg);
+}
+
+/* Skills Section - Space */
+body.theme-space .skill-item {
+    background-color: rgba(0, 0, 0, 0.5);
+    border: 1px solid rgba(67, 97, 238, 0.3);
+    border-radius: 10px;
+    box-shadow: 0 0 15px rgba(67, 97, 238, 0.2);
+    backdrop-filter: blur(5px);
+}
+
+body.theme-space .skill-icon {
+    background-color: rgba(67, 97, 238, 0.2);
+    color: var(--primary-color);
+    border: 1px solid var(--primary-color);
+}
+
+body.theme-space .skill-level {
+    background: linear-gradient(90deg, var(--primary-color), var(--accent-color));
+    box-shadow: 0 0 10px var(--primary-color);
+}
+
+body.theme-space .skill-item:hover {
+    transform: translateY(-5px) scale(1.02);
+    box-shadow: 0 10px 20px rgba(67, 97, 238, 0.3);
+}
+
+/* Experience Section - Space */
+body.theme-space .timeline::before {
+    background: linear-gradient(to bottom, var(--primary-color), var(--accent-color));
+    box-shadow: 0 0 10px var(--primary-color);
+}
+
+body.theme-space .timeline-dot {
+    background-color: var(--accent-color);
+    box-shadow: 0 0 10px var(--accent-color);
+    border: 2px solid var(--dark-bg);
+}
+
+body.theme-space .timeline-content {
+    background-color: rgba(0, 0, 0, 0.5);
+    border: 1px solid rgba(67, 97, 238, 0.3);
+    border-radius: 10px;
+    box-shadow: 0 0 15px rgba(67, 97, 238, 0.2);
+    backdrop-filter: blur(5px);
+}
+
+body.theme-space .timeline-date {
+    color: var(--accent-color);
+    text-shadow: 0 0 5px var(--accent-color);
+    font-weight: 600;
+}
+
+/* Projects Section - Space */
+body.theme-space .filter-btn {
+    background-color: rgba(0, 0, 0, 0.5);
+    border: 1px solid var(--primary-color);
+    color: var(--primary-color);
+    border-radius: 30px;
+}
+
+body.theme-space .filter-btn.active, 
+body.theme-space .filter-btn:hover {
+    background-color: var(--primary-color);
+    color: var(--dark-bg);
+    box-shadow: 0 0 15px var(--primary-color);
+}
+
+body.theme-space .project-card {
+    background-color: rgba(0, 0, 0, 0.5);
+    border: 1px solid rgba(67, 97, 238, 0.3);
+    border-radius: 10px;
+    box-shadow: 0 0 15px rgba(67, 97, 238, 0.2);
+    backdrop-filter: blur(5px);
+    overflow: hidden;
+}
+
+body.theme-space .project-card:hover {
+    transform: translateY(-10px) scale(1.02);
+    box-shadow: 0 15px 30px rgba(67, 97, 238, 0.3);
+}
+
+body.theme-space .project-tech span {
+    background-color: rgba(67, 97, 238, 0.2);
+    border: 1px solid var(--primary-color);
+    color: var(--primary-color);
+    border-radius: 20px;
+}
+
+/* Research Papers - Space */
+body.theme-space .paper-card {
+    background-color: rgba(0, 0, 0, 0.5);
+    border: 1px solid rgba(67, 97, 238, 0.3);
+    border-radius: 10px;
+    box-shadow: 0 0 15px rgba(67, 97, 238, 0.2);
+    backdrop-filter: blur(5px);
+}
+
+body.theme-space .paper-icon {
+    background-color: rgba(67, 97, 238, 0.2);
+    color: var(--primary-color);
+    border: 1px solid var(--primary-color);
+    box-shadow: 0 0 10px var(--primary-color);
+}
+
+/* Education - Space */
+body.theme-space .education-card {
+    background-color: rgba(0, 0, 0, 0.5);
+    border: 1px solid rgba(67, 97, 238, 0.3);
+    border-radius: 10px;
+    box-shadow: 0 0 15px rgba(67, 97, 238, 0.2);
+    backdrop-filter: blur(5px);
+}
+
+body.theme-space .education-icon {
+    background-color: rgba(67, 97, 238, 0.2);
+    color: var(--primary-color);
+    border: 1px solid var(--primary-color);
+    box-shadow: 0 0 10px var(--primary-color);
+}
+
+/* Contact - Space */
+body.theme-space .contact-form {
+    background-color: rgba(0, 0, 0, 0.5);
+    border: 1px solid rgba(67, 97, 238, 0.3);
+    border-radius: 10px;
+    box-shadow: 0 0 20px rgba(67, 97, 238, 0.2);
+    backdrop-filter: blur(5px);
+}
+
+body.theme-space input, 
+body.theme-space textarea {
+    background-color: rgba(0, 0, 0, 0.5);
+    border: 1px solid var(--primary-color);
+    color: var(--light-text);
+    border-radius: 5px;
+}
+
+body.theme-space input:focus, 
+body.theme-space textarea:focus {
+    box-shadow: 0 0 10px var(--primary-color);
+    border-color: var(--primary-color);
+}
+
+/* Footer - Space */
+body.theme-space footer {
+    background-color: rgba(11, 9, 10, 0.9);
+    border-top: 1px solid rgba(67, 97, 238, 0.3);
+    backdrop-filter: blur(10px);
+}
+
+body.theme-space footer .social-icon {
+    background-color: rgba(67, 97, 238, 0.2);
+    border: 1px solid var(--primary-color);
+}
+
+
+
+
+
+/* Digital Theme */
+body.theme-digital {
+    --primary-color: #4ecca3;
+    --secondary-color: #232931;
+    --accent-color: #c5fff9;
+    --text-color: #eeeeee;
+    --light-text: #dddddd;
+    --dark-bg: #232931;
+    background-color: var(--dark-bg);
+    color: var(--text-color);
+    font-family: 'Share Tech Mono', monospace;
+}
+
+/* Navigation - Digital */
+body.theme-digital nav {
+    background-color: rgba(35, 41, 49, 0.8);
+    border-bottom: 1px solid var(--primary-color);
+    backdrop-filter: blur(10px);
+}
+
+body.theme-digital .nav-link {
+    color: var(--light-text);
+    letter-spacing: 1px;
+}
+
+body.theme-digital .logo {
+    color: var(--primary-color);
+    text-shadow: 0 0 5px var(--primary-color);
+}
+
+/* Sections - Digital */
+body.theme-digital .section {
+    background: linear-gradient(to bottom, rgba(35, 41, 49, 0.9), rgba(35, 41, 49, 0.7));
+    border-bottom: 1px solid var(--primary-color);
+    position: relative;
+    overflow: hidden;
+}
+
+body.theme-digital .section::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: repeating-linear-gradient(0deg, transparent, transparent 20px, rgba(78, 204, 163, 0.05) 20px, rgba(78, 204, 163, 0.05) 40px);
+    z-index: 0;
+}
+
+body.theme-digital .section-header h2 {
+    color: var(--primary-color);
+    text-shadow: 0 0 5px var(--primary-color);
+    letter-spacing: 2px;
+    text-transform: uppercase;
+}
+
+body.theme-digital .underline {
+    background-color: var(--primary-color);
+    box-shadow: 0 0 10px var(--primary-color);
+    height: 2px;
+}
+
+/* About Section - Digital */
+body.theme-digital .about-content {
+    background-color: rgba(35, 41, 49, 0.7);
+    border: 1px solid var(--primary-color);
+    border-radius: 5px;
+    padding: 20px;
+    box-shadow: 0 0 20px rgba(78, 204, 163, 0.2);
+}
+
+body.theme-digital .image-container {
+    border: 2px solid var(--primary-color);
+    box-shadow: 0 0 15px var(--primary-color);
+    clip-path: polygon(0 0, 100% 0, 100% 85%, 85% 100%, 0 100%);
+}
+
+body.theme-digital .personal-info .info-label {
+    color: var(--primary-color);
+    font-weight: 600;
+}
+
+body.theme-digital .social-icon {
+    background-color: var(--secondary-color);
+    border: 1px solid var(--primary-color);
+    color: var(--primary-color);
+}
+
+body.theme-digital .social-icon:hover {
+    background-color: var(--primary-color);
+    color: var(--secondary-color);
+    box-shadow: 0 0 15px var(--primary-color);
+}
+
+/* Skills Section - Digital */
+body.theme-digital .skill-item {
+    background-color: rgba(35, 41, 49, 0.7);
+    border: 1px solid var(--primary-color);
+    border-radius: 5px;
+    box-shadow: 0 0 15px rgba(78, 204, 163, 0.1);
+    clip-path: polygon(0 0, 100% 0, 100% 90%, 95% 100%, 0 100%);
+}
+
+body.theme-digital .skill-icon {
+    background-color: var(--secondary-color);
+    color: var(--primary-color);
+    border: 1px solid var(--primary-color);
+}
+
+body.theme-digital .skill-level {
+    background-color: var(--primary-color);
+    box-shadow: 0 0 10px var(--primary-color);
+}
+
+body.theme-digital .skill-item:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 20px rgba(78, 204, 163, 0.2);
+}
+
+/* Experience Section - Digital */
+body.theme-digital .timeline::before {
+    background-color: var(--primary-color);
+    box-shadow: 0 0 10px var(--primary-color);
+}
+
+body.theme-digital .timeline-dot {
+    background-color: var(--primary-color);
+    box-shadow: 0 0 10px var(--primary-color);
+    border: 2px solid var(--secondary-color);
+}
+
+body.theme-digital .timeline-content {
+    background-color: rgba(35, 41, 49, 0.7);
+    border: 1px solid var(--primary-color);
+    border-radius: 5px;
+    box-shadow: 0 0 15px rgba(78, 204, 163, 0.1);
+    clip-path: polygon(0 0, 100% 0, 100% 90%, 95% 100%, 0 100%);
+}
+
+body.theme-digital .timeline-date {
+    color: var(--primary-color);
+    font-weight: 600;
+    letter-spacing: 1px;
+}
+
+/* Projects Section - Digital */
+body.theme-digital .filter-btn {
+    background-color: var(--secondary-color);
+    border: 1px solid var(--primary-color);
+    color: var(--primary-color);
+    letter-spacing: 1px;
+}
+
+body.theme-digital .filter-btn.active, 
+body.theme-digital .filter-btn:hover {
+    background-color: var(--primary-color);
+    color: var(--secondary-color);
+    box-shadow: 0 0 15px var(--primary-color);
+}
+
+body.theme-digital .project-card {
+    background-color: rgba(35, 41, 49, 0.7);
+    border: 1px solid var(--primary-color);
+    border-radius: 5px;
+    box-shadow: 0 0 15px rgba(78, 204, 163, 0.1);
+    clip-path: polygon(0 0, 100% 0, 100% 90%, 95% 100%, 0 100%);
+    overflow: hidden;
+}
+
+body.theme-digital .project-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 15px 30px rgba(78, 204, 163, 0.2);
+}
+
+body.theme-digital .project-tech span {
+    background-color: var(--secondary-color);
+    border: 1px solid var(--primary-color);
+    color: var(--primary-color);
+    border-radius: 3px;
+}
+
+/* Research Papers - Digital */
+body.theme-digital .paper-card {
+    background-color: rgba(35, 41, 49, 0.7);
+    border: 1px solid var(--primary-color);
+    border-radius: 5px;
+    box-shadow: 0 0 15px rgba(78, 204, 163, 0.1);
+    clip-path: polygon(0 0, 100% 0, 100% 90%, 95% 100%, 0 100%);
+}
+
+body.theme-digital .paper-icon {
+    background-color: var(--secondary-color);
+    color: var(--primary-color);
+    border: 1px solid var(--primary-color);
+}
+
+/* Education - Digital */
+body.theme-digital .education-card {
+    background-color: rgba(35, 41, 49, 0.7);
+    border: 1px solid var(--primary-color);
+    border-radius: 5px;
+    box-shadow: 0 0 15px rgba(78, 204, 163, 0.1);
+    clip-path: polygon(0 0, 100% 0, 100% 90%, 95% 100%, 0 100%);
+}
+
+body.theme-digital .education-icon {
+    background-color: var(--secondary-color);
+    color: var(--primary-color);
+    border: 1px solid var(--primary-color);
+}
+
+/* Contact - Digital */
+body.theme-digital .contact-form {
+    background-color: rgba(35, 41, 49, 0.7);
+    border: 1px solid var(--primary-color);
+    border-radius: 5px;
+    box-shadow: 0 0 20px rgba(78, 204, 163, 0.2);
+    clip-path: polygon(0 0, 100% 0, 100% 95%, 95% 100%, 0 100%);
+}
+
+body.theme-digital input, 
+body.theme-digital textarea {
+    background-color: var(--secondary-color);
+    border: 1px solid var(--primary-color);
+    color: var(--light-text);
+    border-radius: 3px;
+}
+
+body.theme-digital input:focus, 
+body.theme-digital textarea:focus {
+    box-shadow: 0 0 10px var(--primary-color);
+    border-color: var(--primary-color);
+}
+
+/* Footer - Digital */
+body.theme-digital footer {
+    background-color: rgba(35, 41, 49, 0.9);
+    border-top: 1px solid var(--primary-color);
+}
+
+body.theme-digital footer .social-icon {
+    background-color: var(--secondary-color);
+    border: 1px solid var(--primary-color);
+    color: var(--primary-color);
+}
+
+
+
+
+
+/* Surreal Theme */
+body.theme-surreal {
+    --primary-color: #ff7700;
+    --secondary-color: #ff0077;
+    --accent-color: #eeaa00;
+    --text-color: #ffffff;
+    --light-text: #f4f4f4;
+    --dark-bg: #1a1a2e;
+    background-color: var(--dark-bg);
+    color: var(--text-color);
+    font-family: 'Comfortaa', cursive;
+}
+
+/* Navigation - Surreal */
+body.theme-surreal nav {
+    background-color: rgba(26, 26, 46, 0.8);
+    border-bottom: 1px solid var(--primary-color);
+    backdrop-filter: blur(10px);
+}
+
+body.theme-surreal .nav-link {
+    color: var(--light-text);
+    text-shadow: 0 0 5px var(--primary-color);
+}
+
+body.theme-surreal .logo {
+    color: var(--primary-color);
+    text-shadow: 0 0 10px var(--primary-color);
+}
+
+/* Sections - Surreal */
+body.theme-surreal .section {
+    background: linear-gradient(to bottom, rgba(26, 26, 46, 0.9), rgba(26, 26, 46, 0.7));
+    border-bottom: 1px solid var(--secondary-color);
+    position: relative;
+    overflow: hidden;
+}
+
+body.theme-surreal .section::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: url('assets/surreal-bg.png');
+    background-size: cover;
+    opacity: 0.1;
+    z-index: 0;
+    animation: float 20s infinite alternate;
+}
+
+@keyframes float {
+    0% { transform: translateY(0) scale(1); }
+    50% { transform: translateY(-10px) scale(1.05); }
+    100% { transform: translateY(0) scale(1); }
+}
+
+body.theme-surreal .section-header h2 {
+    color: var(--secondary-color);
+    text-shadow: 0 0 10px var(--secondary-color);
+    font-weight: 700;
+    letter-spacing: 2px;
+}
+
+body.theme-surreal .underline {
+    background: linear-gradient(90deg, var(--primary-color), var(--secondary-color));
+    box-shadow: 0 0 10px var(--primary-color);
+    height: 3px;
+    border-radius: 3px;
+}
+
+/* About Section - Surreal */
+body.theme-surreal .about-content {
+    background-color: rgba(26, 26, 46, 0.7);
+    border: 1px solid var(--primary-color);
+    border-radius: 20px;
+    padding: 30px;
+    box-shadow: 0 0 20px rgba(255, 119, 0, 0.2);
+    backdrop-filter: blur(5px);
+}
+
+body.theme-surreal .image-container {
+    border: 3px solid var(--primary-color);
+    box-shadow: 0 0 15px var(--primary-color);
+    border-radius: 30% 70% 70% 30% / 30% 30% 70% 70%;
+    overflow: hidden;
+    animation: morphing 10s infinite;
+}
+
+@keyframes morphing {
+    0% { border-radius: 30% 70% 70% 30% / 30% 30% 70% 70%; }
+    25% { border-radius: 58% 42% 75% 25% / 76% 46% 54% 24%; }
+    50% { border-radius: 50% 50% 33% 67% / 55% 27% 73% 45%; }
+    75% { border-radius: 33% 67% 58% 42% / 63% 68% 32% 37%; }
+    100% { border-radius: 30% 70% 70% 30% / 30% 30% 70% 70%; }
+}
+
+body.theme-surreal .personal-info .info-label {
+    color: var(--accent-color);
+    font-weight: 600;
+}
+
+body.theme-surreal .social-icon {
+    background: linear-gradient(45deg, var(--primary-color), var(--secondary-color));
+    border-radius: 30% 70% 70% 30% / 30% 30% 70% 70%;
+    box-shadow: 0 0 10px var(--primary-color);
+}
+
+/* Skills Section - Surreal */
+body.theme-surreal .skill-item {
+    background-color: rgba(26, 26, 46, 0.7);
+    border: 1px solid var(--primary-color);
+    border-radius: 20px;
+    box-shadow: 0 0 15px rgba(255, 119, 0, 0.2);
+    backdrop-filter: blur(5px);
+    transform: perspective(1000px) rotateX(5deg);
+    transition: all 0.5s ease;
+}
+
+body.theme-surreal .skill-icon {
+    background: linear-gradient(45deg, var(--primary-color), var(--secondary-color));
+    color: var(--dark-bg);
+    border-radius: 30% 70% 70% 30% / 30% 30% 70% 70%;
+}
+
+body.theme-surreal .skill-level {
+    background: linear-gradient(90deg, var(--primary-color), var(--secondary-color));
+    box-shadow: 0 0 10px var(--primary-color);
+    border-radius: 10px;
+}
+
+body.theme-surreal .skill-item:hover {
+    transform: perspective(1000px) rotateX(0deg) scale(1.05);
+    box-shadow: 0 10px 20px rgba(255, 119, 0, 0.3);
+}
+
+/* Experience Section - Surreal */
+body.theme-surreal .timeline::before {
+    background: linear-gradient(to bottom, var(--primary-color), var(--secondary-color));
+    box-shadow: 0 0 10px var(--primary-color);
+}
+
+body.theme-surreal .timeline-dot {
+    background: linear-gradient(45deg, var(--primary-color), var(--secondary-color));
+    box-shadow: 0 0 10px var(--primary-color);
+    border: 2px solid var(--dark-bg);
+    transform: scale(1.2);
+}
+
+body.theme-surreal .timeline-content {
+    background-color: rgba(26, 26, 46, 0.7);
+    border: 1px solid var(--primary-color);
+    border-radius: 20px;
+    box-shadow: 0 0 15px rgba(255, 119, 0, 0.2);
+    backdrop-filter: blur(5px);
+    transform: perspective(1000px) rotateY(5deg);
+    transition: all 0.5s ease;
+}
+
+body.theme-surreal .timeline-content:hover {
+    transform: perspective(1000px) rotateY(0deg);
+}
+
+body.theme-surreal .timeline-date {
+    color: var(--accent-color);
+    text-shadow: 0 0 5px var(--accent-color);
+    font-weight: 600;
+    font-style: italic;
+}
+
+/* Projects Section - Surreal */
+body.theme-surreal .filter-btn {
+    background-color: rgba(26, 26, 46, 0.7);
+    border: 1px solid var(--primary-color);
+    color: var(--primary-color);
+    border-radius: 30px;
+}
+
+body.theme-surreal .filter-btn.active, 
+body.theme-surreal .filter-btn:hover {
+    background: linear-gradient(45deg, var(--primary-color), var(--secondary-color));
+    color: var(--dark-bg);
+    box-shadow: 0 0 15px var(--primary-color);
+}
+
+body.theme-surreal .project-card {
+    background-color: rgba(26, 26, 46, 0.7);
+    border: 1px solid var(--primary-color);
+    border-radius: 20px;
+    box-shadow: 0 0 15px rgba(255, 119, 0, 0.2);
+    backdrop-filter: blur(5px);
+    transform: perspective(1000px) rotateY(5deg);
+    transition: all 0.5s ease;
+    overflow: hidden;
+}
+
+body.theme-surreal .project-card:hover {
+    transform: perspective(1000px) rotateY(0deg) translateY(-10px);
+    box-shadow: 0 15px 30px rgba(255, 119, 0, 0.3);
+}
+
+body.theme-surreal .project-tech span {
+    background-color: rgba(255, 119, 0, 0.2);
+    border: 1px solid var(--primary-color);
+    color: var(--primary-color);
+    border-radius: 20px;
+}
+
+/* Research Papers - Surreal */
+body.theme-surreal .paper-card {
+    background-color: rgba(26, 26, 46, 0.7);
+    border: 1px solid var(--primary-color);
+    border-radius: 20px;
+    box-shadow: 0 0 15px rgba(255, 119, 0, 0.2);
+    backdrop-filter: blur(5px);
+    transform: perspective(1000px) rotateX(5deg);
+    transition: all 0.5s ease;
+}
+
+body.theme-surreal .paper-card:hover {
+    transform: perspective(1000px) rotateX(0deg);
+}
+
+body.theme-surreal .paper-icon {
+    background: linear-gradient(45deg, var(--primary-color), var(--secondary-color));
+    color: var(--dark-bg);
+    border-radius: 30% 70% 70% 30% / 30% 30% 70% 70%;
+    box-shadow: 0 0 10px var(--primary-color);
+}
+
+/* Education - Surreal */
+body.theme-surreal .education-card {
+    background-color: rgba(26, 26, 46, 0.7);
+    border: 1px solid var(--primary-color);
+    border-radius: 20px;
+    box-shadow: 0 0 15px rgba(255, 119, 0, 0.2);
+    backdrop-filter: blur(5px);
+    transform: perspective(1000px) rotateY(-5deg);
+    transition: all 0.5s ease;
+}
+
+body.theme-surreal .education-card:hover {
+    transform: perspective(1000px) rotateY(0deg);
+}
+
+body.theme-surreal .education-icon {
+    background: linear-gradient(45deg, var(--primary-color), var(--secondary-color));
+    color: var(--dark-bg);
+    border-radius: 30% 70% 70% 30% / 30% 30% 70% 70%;
+    box-shadow: 0 0 10px var(--primary-color);
+}
+
+/* Contact - Surreal */
+body.theme-surreal .contact-form {
+    background-color: rgba(26, 26, 46, 0.7);
+    border: 1px solid var(--primary-color);
+    border-radius: 20px;
+    box-shadow: 0 0 20px rgba(255, 119, 0, 0.2);
+    backdrop-filter: blur(5px);
+}
+
+body.theme-surreal input, 
+body.theme-surreal textarea {
+    background-color: rgba(26, 26, 46, 0.5);
+    border: 1px solid var(--primary-color);
+    color: var(--light-text);
+    border-radius: 10px;
+}
+
+body.theme-surreal input:focus, 
+body.theme-surreal textarea:focus {
+    box-shadow: 0 0 10px var(--primary-color);
+    border-color: var(--primary-color);
+}
+
+/* Footer - Surreal */
+body.theme-surreal footer {
+    background-color: rgba(26, 26, 46, 0.9);
+    border-top: 1px solid var(--primary-color);
+}
+
+body.theme-surreal footer .social-icon {
+    background: linear-gradient(45deg, var(--primary-color), var(--secondary-color));
+    border-radius: 30% 70% 70% 30% / 30% 30% 70% 70%;
+}
+
+
+
+
+/* Biomimicry Theme */
+body.theme-biomimicry {
+    --primary-color: #2ecc71;
+    --secondary-color: #3498db;
+    --accent-color: #f1c40f;
+    --text-color: #f5f5f5;
+    --light-text: #ecf0f1;
+    --dark-bg: #1e272e;
+    background-color: var(--dark-bg);
+    color: var(--text-color);
+    font-family: 'Quicksand', sans-serif;
+}
+
+/* Navigation - Biomimicry */
+body.theme-biomimicry nav {
+    background-color: rgba(30, 39, 46, 0.8);
+    border-bottom: 2px solid var(--primary-color);
+    backdrop-filter: blur(10px);
+}
+
+body.theme-biomimicry .nav-link {
+    color: var(--light-text);
+    font-weight: 500;
+}
+
+body.theme-biomimicry .logo {
+    color: var(--primary-color);
+    text-shadow: 0 0 10px var(--primary-color);
+}
+
+/* Sections - Biomimicry */
+body.theme-biomimicry .section {
+    background: radial-gradient(ellipse at bottom, rgba(30, 39, 46, 0.9), rgba(30, 39, 46, 0.95));
+    position: relative;
+    overflow: hidden;
+}
+
+body.theme-biomimicry .section::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: url('assets/leaf-pattern.png');
+    background-size: cover;
+    opacity: 0.05;
+    z-index: 0;
+    animation: breathe 15s infinite alternate;
+}
+
+@keyframes breathe {
+    0% { transform: scale(1); opacity: 0.03; }
+    50% { transform: scale(1.05); opacity: 0.06; }
+    100% { transform: scale(1); opacity: 0.03; }
+}
+
+body.theme-biomimicry .section-header h2 {
+    color: var(--primary-color);
+    font-weight: 600;
+    letter-spacing: 1px;
+    position: relative;
+}
+
+body.theme-biomimicry .section-header h2::after {
+    content: '';
+    position: absolute;
+    bottom: -15px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 60px;
+    height: 3px;
+    background: var(--primary-color);
+    border-radius: 3px;
+}
+
+body.theme-biomimicry .underline {
+    display: none;
+}
+
+/* About Section - Biomimicry */
+body.theme-biomimicry .about-content {
+    background-color: rgba(0, 0, 0, 0.2);
+    border: none;
+    border-radius: 20px;
+    padding: 30px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+    position: relative;
+    overflow: hidden;
+}
+
+body.theme-biomimicry .about-content::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(45deg, rgba(46, 204, 113, 0.05), rgba(52, 152, 219, 0.05));
+    z-index: -1;
+}
+
+body.theme-biomimicry .image-container {
+    border: 3px solid var(--primary-color);
+    border-radius: 50%;
+    overflow: hidden;
+    box-shadow: 0 0 20px rgba(46, 204, 113, 0.3);
+}
+
+body.theme-biomimicry .personal-info .info-label {
+    color: var(--accent-color);
+    font-weight: 600;
+}
+
+body.theme-biomimicry .social-icon {
+    background-color: var(--primary-color);
+    color: var(--dark-bg);
+    border-radius: 50%;
+    transition: all 0.5s ease;
+}
+
+body.theme-biomimicry .social-icon:hover {
+    transform: translateY(-5px) rotate(15deg);
+    background-color: var(--secondary-color);
+}
+
+/* Skills Section - Biomimicry */
+body.theme-biomimicry .skill-item {
+    background-color: rgba(0, 0, 0, 0.2);
+    border: none;
+    border-radius: 20px;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    position: relative;
+}
+
+body.theme-biomimicry .skill-item::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 5px;
+    background: var(--primary-color);
+}
+
+body.theme-biomimicry .skill-icon {
+    background-color: var(--primary-color);
+    color: var(--dark-bg);
+    border-radius: 50%;
+}
+
+body.theme-biomimicry .skill-level {
+    background: linear-gradient(90deg, var(--primary-color), var(--secondary-color));
+    height: 8px;
+    border-radius: 4px;
+}
+
+body.theme-biomimicry .skill-item:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 15px 30px rgba(0, 0, 0, 0.2);
+}
+
+/* Experience Section - Biomimicry */
+body.theme-biomimicry .timeline::before {
+    background: linear-gradient(to bottom, var(--primary-color), var(--secondary-color));
+    width: 3px;
+    border-radius: 3px;
+}
+
+body.theme-biomimicry .timeline-dot {
+    background-color: var(--accent-color);
+    border: 3px solid var(--dark-bg);
+    box-shadow: 0 0 0 3px var(--primary-color);
+}
+
+body.theme-biomimicry .timeline-content {
+    background-color: rgba(0, 0, 0, 0.2);
+    border: none;
+    border-radius: 20px;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+    position: relative;
+    overflow: hidden;
+}
+
+body.theme-biomimicry .timeline-content::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 5px;
+    height: 100%;
+    background: var(--primary-color);
+}
+
+body.theme-biomimicry .timeline-date {
+    color: var(--accent-color);
+    font-weight: 600;
+}
+
+/* Projects Section - Biomimicry */
+body.theme-biomimicry .filter-btn {
+    background-color: rgba(0, 0, 0, 0.2);
+    border: 2px solid var(--primary-color);
+    color: var(--primary-color);
+    border-radius: 30px;
+    padding: 8px 20px;
+}
+
+body.theme-biomimicry .filter-btn.active, 
+body.theme-biomimicry .filter-btn:hover {
+    background-color: var(--primary-color);
+    color: var(--dark-bg);
+}
+
+body.theme-biomimicry .project-card {
+    background-color: rgba(0, 0, 0, 0.2);
+    border: none;
+    border-radius: 20px;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    position: relative;
+}
+
+body.theme-biomimicry .project-card::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 5px;
+    background: linear-gradient(90deg, var(--primary-color), var(--secondary-color));
+    transform: scaleX(0);
+    transform-origin: left;
+    transition: transform 0.5s ease;
+}
+
+body.theme-biomimicry .project-card:hover::after {
+    transform: scaleX(1);
+}
+
+body.theme-biomimicry .project-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 20px 40px rgba(0, 0, 0, 0.2);
+}
+
+body.theme-biomimicry .project-tech span {
+    background-color: rgba(46, 204, 113, 0.1);
+    border: 1px solid var(--primary-color);
+    color: var(--primary-color);
+    border-radius: 20px;
+}
+
+/* Research Papers - Biomimicry */
+body.theme-biomimicry .paper-card {
+    background-color: rgba(0, 0, 0, 0.2);
+    border: none;
+    border-radius: 20px;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    position: relative;
+}
+
+body.theme-biomimicry .paper-icon {
+    background-color: var(--primary-color);
+    color: var(--dark-bg);
+    border-radius: 50%;
+}
+
+/* Education - Biomimicry */
+body.theme-biomimicry .education-card {
+    background-color: rgba(0, 0, 0, 0.2);
+    border: none;
+    border-radius: 20px;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    position: relative;
+}
+
+body.theme-biomimicry .education-card::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 100px;
+    height: 100px;
+    background: radial-gradient(circle at top right, var(--primary-color, 0.1), transparent 70%);
+    opacity: 0.2;
+}
+
+body.theme-biomimicry .education-icon {
+    background-color: var(--primary-color);
+    color: var(--dark-bg);
+    border-radius: 50%;
+}
+
+/* Contact - Biomimicry */
+body.theme-biomimicry .contact-form {
+    background-color: rgba(0, 0, 0, 0.2);
+    border: none;
+    border-radius: 20px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+    position: relative;
+    overflow: hidden;
+}
+
+body.theme-biomimicry input, 
+body.theme-biomimicry textarea {
+    background-color: rgba(255, 255, 255, 0.05);
+    border: 1px solid rgba(46, 204, 113, 0.3);
+    border-radius: 10px;
+    color: var(--light-text);
+    padding: 12px 15px;
+}
+
+body.theme-biomimicry input:focus, 
+body.theme-biomimicry textarea:focus {
+    border-color: var(--primary-color);
+    box-shadow: 0 0 10px rgba(46, 204, 113, 0.2);
+}
+
+/* Footer - Biomimicry */
+body.theme-biomimicry footer {
+    background-color: rgba(20, 29, 36, 0.95);
+    border-top: 2px solid var(--primary-color);
+}
+
+
+
+
+
+/* Glassmorphism Theme */
+body.theme-glassmorphism {
+    --primary-color: #4facfe;
+    --secondary-color: #00f2fe;
+    --accent-color: #f093fb;
+    --text-color: #ffffff;
+    --light-text: #e6e6e6;
+    --dark-bg: #151c24;
+    background-color: var(--dark-bg);
+    color: var(--text-color);
+    font-family: 'Poppins', sans-serif;
+    background-image: radial-gradient(circle at 30% 20%, rgba(79, 172, 254, 0.2), transparent 40%), 
+                      radial-gradient(circle at 80% 70%, rgba(240, 147, 251, 0.2), transparent 40%);
+}
+
+/* Navigation - Glassmorphism */
+body.theme-glassmorphism nav {
+    background: rgba(255, 255, 255, 0.1);
+    backdrop-filter: blur(20px);
+    -webkit-backdrop-filter: blur(20px);
+    border: 1px solid rgba(255, 255, 255, 0.18);
+    box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+}
+
+body.theme-glassmorphism .nav-link {
+    color: var(--light-text);
+    font-weight: 400;
+    letter-spacing: 0.5px;
+    text-shadow: 0 0 10px rgba(255, 255, 255, 0.5);
+}
+
+body.theme-glassmorphism .logo {
+    color: var(--primary-color);
+    text-shadow: 0 0 10px var(--primary-color);
+}
+
+/* Sections - Glassmorphism */
+body.theme-glassmorphism .section {
+    position: relative;
+    overflow: hidden;
+}
+
+body.theme-glassmorphism .section::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(135deg, rgba(255, 255, 255, 0.05), rgba(255, 255, 255, 0.02));
+    z-index: -1;
+}
+
+body.theme-glassmorphism .section-header h2 {
+    color: var(--primary-color);
+    font-weight: 600;
+    letter-spacing: 1px;
+    text-shadow: 0 0 15px rgba(79, 172, 254, 0.7);
+}
+
+body.theme-glassmorphism .underline {
+    background: linear-gradient(90deg, var(--primary-color), var(--secondary-color));
+    box-shadow: 0 0 20px var(--primary-color);
+    height: 3px;
+    border-radius: 3px;
+}
+
+/* About Section - Glassmorphism */
+body.theme-glassmorphism .about-content {
+    background: rgba(255, 255, 255, 0.08);
+    backdrop-filter: blur(25px);
+    -webkit-backdrop-filter: blur(25px);
+    border: 1px solid rgba(255, 255, 255, 0.18);
+    border-radius: 16px;
+    padding: 30px;
+    box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+    position: relative;
+    overflow: hidden;
+}
+
+body.theme-glassmorphism .about-content::before {
+    content: '';
+    position: absolute;
+    top: -50%;
+    left: -50%;
+    width: 200%;
+    height: 200%;
+    background: radial-gradient(circle, rgba(255, 255, 255, 0.1) 0%, transparent 70%);
+    opacity: 0.5;
+    pointer-events: none;
+    z-index: -1;
+    animation: rotate 20s linear infinite;
+}
+
+@keyframes rotate {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
+}
+
+body.theme-glassmorphism .image-container {
+    border: 2px solid rgba(255, 255, 255, 0.2);
+    border-radius: 16px;
+    overflow: hidden;
+    box-shadow: 0 8px 32px rgba(79, 172, 254, 0.3);
+    position: relative;
+}
+
+body.theme-glassmorphism .image-container::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(135deg, rgba(255, 255, 255, 0.2), transparent);
+    pointer-events: none;
+}
+
+body.theme-glassmorphism .personal-info .info-label {
+    color: var(--accent-color);
+    font-weight: 500;
+    text-shadow: 0 0 5px rgba(240, 147, 251, 0.5);
+}
+
+body.theme-glassmorphism .social-icon {
+    background: rgba(255, 255, 255, 0.1);
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+    border: 1px solid rgba(255, 255, 255, 0.18);
+    color: var(--primary-color);
+    box-shadow: 0 8px 32px rgba(31, 38, 135, 0.2);
+    transition: all 0.4s ease;
+}
+
+body.theme-glassmorphism .social-icon:hover {
+    background: rgba(79, 172, 254, 0.2);
+    transform: translateY(-5px);
+    box-shadow: 0 15px 35px rgba(79, 172, 254, 0.4);
+}
+
+/* Skills Section - Glassmorphism */
+body.theme-glassmorphism .skill-item {
+    background: rgba(255, 255, 255, 0.08);
+    backdrop-filter: blur(25px);
+    -webkit-backdrop-filter: blur(25px);
+    border: 1px solid rgba(255, 255, 255, 0.18);
+    border-radius: 16px;
+    box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+    transition: transform 0.4s ease, box-shadow 0.4s ease;
+    position: relative;
+    overflow: hidden;
+}
+
+body.theme-glassmorphism .skill-item::before {
+    content: '';
+    position: absolute;
+    top: -50%;
+    left: -50%;
+    width: 200%;
+    height: 200%;
+    background: radial-gradient(circle, rgba(255, 255, 255, 0.1) 0%, transparent 60%);
+    opacity: 0.5;
+    pointer-events: none;
+    z-index: -1;
+}
+
+body.theme-glassmorphism .skill-icon {
+    background: rgba(79, 172, 254, 0.15);
+    backdrop-filter: blur(15px);
+    -webkit-backdrop-filter: blur(15px);
+    border: 1px solid rgba(255, 255, 255, 0.18);
+    color: var(--primary-color);
+    border-radius: 12px;
+    box-shadow: 0 4px 15px rgba(79, 172, 254, 0.3);
+}
+
+body.theme-glassmorphism .skill-level {
+    background: linear-gradient(90deg, var(--primary-color), var(--secondary-color));
+    box-shadow: 0 0 15px rgba(79, 172, 254, 0.7);
+    border-radius: 10px;
+}
+
+body.theme-glassmorphism .skill-item:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 15px 40px rgba(79, 172, 254, 0.3);
+}
+
+/* All other sections with enhanced glass effect */
+body.theme-glassmorphism .timeline-content,
+body.theme-glassmorphism .project-card,
+body.theme-glassmorphism .paper-card,
+body.theme-glassmorphism .education-card,
+body.theme-glassmorphism .contact-form,
+body.theme-glassmorphism .filter-btn {
+    background: rgba(255, 255, 255, 0.08);
+    backdrop-filter: blur(25px);
+    -webkit-backdrop-filter: blur(25px);
+    border: 1px solid rgba(255, 255, 255, 0.18);
+    box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+    position: relative;
+    overflow: hidden;
+}
+
+body.theme-glassmorphism .timeline-content::before,
+body.theme-glassmorphism .project-card::before,
+body.theme-glassmorphism .paper-card::before,
+body.theme-glassmorphism .education-card::before,
+body.theme-glassmorphism .contact-form::before {
+    content: '';
+    position: absolute;
+    top: -50%;
+    left: -50%;
+    width: 200%;
+    height: 200%;
+    background: radial-gradient(circle, rgba(255, 255, 255, 0.1) 0%, transparent 70%);
+    opacity: 0.3;
+    pointer-events: none;
+    z-index: -1;
+}
+
+body.theme-glassmorphism input, 
+body.theme-glassmorphism textarea {
+    background: rgba(255, 255, 255, 0.05);
+    backdrop-filter: blur(15px);
+    -webkit-backdrop-filter: blur(15px);
+    border: 1px solid rgba(255, 255, 255, 0.18);
+    border-radius: 10px;
+    color: var(--light-text);
+    box-shadow: 0 2px 15px rgba(31, 38, 135, 0.2);
+    transition: all 0.3s ease;
+}
+
+body.theme-glassmorphism input:focus, 
+body.theme-glassmorphism textarea:focus {
+    background: rgba(255, 255, 255, 0.1);
+    box-shadow: 0 8px 25px rgba(79, 172, 254, 0.4);
+    border-color: rgba(79, 172, 254, 0.5);
+}
+
+/* Footer - Glassmorphism */
+body.theme-glassmorphism footer {
+    background: rgba(21, 28, 36, 0.7);
+    backdrop-filter: blur(20px);
+    -webkit-backdrop-filter: blur(20px);
+    border-top: 1px solid rgba(255, 255, 255, 0.1);
+    box-shadow: 0 -8px 32px 0 rgba(31, 38, 135, 0.2);
+}
+
+
+
+
+/* Neon Flux Theme */
+body.theme-neon-flux {
+    --primary-color: #00eeff;
+    --secondary-color: #ff00aa;
+    --accent-color: #ffcc00;
+    --text-color: #ffffff;
+    --light-text: #e0e0e0;
+    --dark-bg: #0f0f1e;
+    background-color: var(--dark-bg);
+    color: var(--text-color);
+    font-family: 'Rajdhani', sans-serif;
+}
+
+/* Navigation - Neon Flux */
+body.theme-neon-flux nav {
+    background-color: rgba(15, 15, 30, 0.8);
+    border-bottom: 2px solid var(--primary-color);
+    backdrop-filter: blur(10px);
+}
+
+body.theme-neon-flux .nav-link {
+    color: var(--light-text);
+    text-shadow: 0 0 8px var(--primary-color);
+    letter-spacing: 1px;
+}
+
+body.theme-neon-flux .logo {
+    color: var(--primary-color);
+    text-shadow: 0 0 15px var(--primary-color);
+    font-weight: 700;
+}
+
+/* Sections - Neon Flux */
+body.theme-neon-flux .section {
+    background: radial-gradient(circle at center, rgba(15, 15, 30, 0.7), rgba(15, 15, 30, 0.9));
+    border-bottom: 2px solid var(--primary-color);
+    position: relative;
+    overflow: hidden;
+}
+
+body.theme-neon-flux .section::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: url('assets/neon-grid.png');
+    background-size: cover;
+    opacity: 0.1;
+    z-index: 0;
+    animation: pulse 8s infinite alternate;
+}
+
+@keyframes pulse {
+    0% { opacity: 0.05; }
+    50% { opacity: 0.15; }
+    100% { opacity: 0.05; }
+}
+
+body.theme-neon-flux .section-header h2 {
+    color: var(--primary-color);
+    text-shadow: 0 0 15px var(--primary-color);
+    font-weight: 700;
+    letter-spacing: 3px;
+    text-transform: uppercase;
+}
+
+body.theme-neon-flux .underline {
+    background: linear-gradient(90deg, transparent, var(--primary-color), var(--secondary-color), transparent);
+    box-shadow: 0 0 15px var(--primary-color);
+    height: 3px;
+    border-radius: 3px;
+}
+
+/* About Section - Neon Flux */
+body.theme-neon-flux .about-content {
+    background-color: rgba(0, 0, 0, 0.5);
+    border: 2px solid var(--primary-color);
+    border-radius: 10px;
+    padding: 30px;
+    box-shadow: 0 0 30px rgba(0, 238, 255, 0.2);
+    backdrop-filter: blur(5px);
+}
+
+body.theme-neon-flux .image-container {
+    border: 3px solid var(--primary-color);
+    box-shadow: 0 0 20px var(--primary-color);
+    clip-path: polygon(0 0, 100% 0, 100% 85%, 85% 100%, 0 100%);
+    overflow: hidden;
+}
+
+body.theme-neon-flux .image-container img {
+    filter: saturate(1.2) contrast(1.1);
+    transition: all 0.5s ease;
+}
+
+body.theme-neon-flux .image-container:hover img {
+    transform: scale(1.05);
+}
+
+body.theme-neon-flux .personal-info .info-label {
+    color: var(--accent-color);
+    font-weight: 600;
+    letter-spacing: 1px;
+}
+
+body.theme-neon-flux .social-icon {
+    background: linear-gradient(45deg, var(--primary-color), var(--secondary-color));
+    color: var(--dark-bg);
+    box-shadow: 0 0 15px var(--primary-color);
+}
+
+/* Skills Section - Neon Flux */
+body.theme-neon-flux .skill-item {
+    background-color: rgba(0, 0, 0, 0.5);
+    border: 2px solid var(--primary-color);
+    border-radius: 10px;
+    box-shadow: 0 0 20px rgba(0, 238, 255, 0.2);
+    backdrop-filter: blur(5px);
+    transform: perspective(800px) rotateX(5deg);
+    transition: all 0.5s ease;
+}
+
+body.theme-neon-flux .skill-icon {
+    background: linear-gradient(45deg, var(--primary-color), var(--secondary-color));
+    color: var(--dark-bg);
+    border-radius: 10px;
+    box-shadow: 0 0 15px var(--primary-color);
+}
+
+body.theme-neon-flux .skill-level {
+    background: linear-gradient(90deg, var(--primary-color), var(--secondary-color));
+    box-shadow: 0 0 10px var(--primary-color);
+    border-radius: 5px;
+}
+
+body.theme-neon-flux .skill-item:hover {
+    transform: perspective(800px) rotateX(0deg) translateY(-10px);
+    box-shadow: 0 15px 30px rgba(0, 238, 255, 0.3);
+}
+
+/* Experience Section - Neon Flux */
+body.theme-neon-flux .timeline::before {
+    background: linear-gradient(to bottom, var(--primary-color), var(--secondary-color));
+    box-shadow: 0 0 15px var(--primary-color);
+}
+
+body.theme-neon-flux .timeline-dot {
+    background: linear-gradient(45deg, var(--primary-color), var(--secondary-color));
+    box-shadow: 0 0 15px var(--primary-color);
+    border: 2px solid var(--dark-bg);
+}
+
+body.theme-neon-flux .timeline-content {
+    background-color: rgba(0, 0, 0, 0.5);
+    border: 2px solid var(--primary-color);
+    border-radius: 10px;
+    box-shadow: 0 0 20px rgba(0, 238, 255, 0.2);
+    backdrop-filter: blur(5px);
+    clip-path: polygon(0 0, 100% 0, 100% 90%, 95% 100%, 0 100%);
+}
+
+body.theme-neon-flux .timeline-date {
+    color: var(--accent-color);
+    text-shadow: 0 0 8px var(--accent-color);
+    font-weight: 600;
+    letter-spacing: 1px;
+}
+
+/* Projects Section - Neon Flux */
+body.theme-neon-flux .filter-btn {
+    background-color: rgba(0, 0, 0, 0.5);
+    border: 2px solid var(--primary-color);
+    color: var(--primary-color);
+    border-radius: 30px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+body.theme-neon-flux .filter-btn.active, 
+body.theme-neon-flux .filter-btn:hover {
+    background: linear-gradient(45deg, var(--primary-color), var(--secondary-color));
+    color: var(--dark-bg);
+    box-shadow: 0 0 20px var(--primary-color);
+}
+
+body.theme-neon-flux .project-card {
+    background-color: rgba(0, 0, 0, 0.5);
+    border: 2px solid var(--primary-color);
+    border-radius: 10px;
+    box-shadow: 0 0 20px rgba(0, 238, 255, 0.2);
+    backdrop-filter: blur(5px);
+    clip-path: polygon(0 0, 100% 0, 100% 90%, 95% 100%, 0 100%);
+    overflow: hidden;
+}
+
+body.theme-neon-flux .project-card:hover {
+    transform: translateY(-15px) scale(1.03);
+    box-shadow: 0 20px 40px rgba(0, 238, 255, 0.3);
+}
+
+body.theme-neon-flux .project-tech span {
+    background-color: rgba(0, 238, 255, 0.2);
+    border: 1px solid var(--primary-color);
+    color: var(--primary-color);
+    border-radius: 20px;
+}
+
+/* Research Papers - Neon Flux */
+body.theme-neon-flux .paper-card {
+    background-color: rgba(0, 0, 0, 0.5);
+    border: 2px solid var(--primary-color);
+    border-radius: 10px;
+    box-shadow: 0 0 20px rgba(0, 238, 255, 0.2);
+    backdrop-filter: blur(5px);
+    clip-path: polygon(0 0, 100% 0, 100% 90%, 95% 100%, 0 100%);
+}
+
+body.theme-neon-flux .paper-icon {
+    background: linear-gradient(45deg, var(--primary-color), var(--secondary-color));
+    color: var(--dark-bg);
+    border-radius: 10px;
+    box-shadow: 0 0 15px var(--primary-color);
+}
+
+/* Education - Neon Flux */
+body.theme-neon-flux .education-card {
+    background-color: rgba(0, 0, 0, 0.5);
+    border: 2px solid var(--primary-color);
+    border-radius: 10px;
+    box-shadow: 0 0 20px rgba(0, 238, 255, 0.2);
+    backdrop-filter: blur(5px);
+    clip-path: polygon(0 0, 100% 0, 100% 90%, 95% 100%, 0 100%);
+}
+
+body.theme-neon-flux .education-icon {
+    background: linear-gradient(45deg, var(--primary-color), var(--secondary-color));
+    color: var(--dark-bg);
+    border-radius: 10px;
+    box-shadow: 0 0 15px var(--primary-color);
+}
+
+/* Contact - Neon Flux */
+body.theme-neon-flux .contact-form {
+    background-color: rgba(0, 0, 0, 0.5);
+    border: 2px solid var(--primary-color);
+    border-radius: 10px;
+    box-shadow: 0 0 30px rgba(0, 238, 255, 0.2);
+    backdrop-filter: blur(5px);
+    clip-path: polygon(0 0, 100% 0, 100% 95%, 95% 100%, 0 100%);
+}
+
+body.theme-neon-flux input, 
+body.theme-neon-flux textarea {
+    background-color: rgba(15, 15, 30, 0.7);
+    border: 2px solid var(--primary-color);
+    color: var(--light-text);
+    border-radius: 5px;
+}
+
+body.theme-neon-flux input:focus, 
+body.theme-neon-flux textarea:focus {
+    box-shadow: 0 0 15px var(--primary-color);
+    border-color: var(--primary-color);
+}
+
+/* Footer - Neon Flux */
+body.theme-neon-flux footer {
+    background-color: rgba(15, 15, 30, 0.9);
+    border-top: 2px solid var(--primary-color);
+}
+
+body.theme-neon-flux footer .social-icon {
+    background: linear-gradient(45deg, var(--primary-color), var(--secondary-color));
+    color: var(--dark-bg);
+}
+
+
+
+
+
+/* Minimalist Theme */
+body.theme-minimalist {
+    --primary-color: #333333;
+    --secondary-color: #666666;
+    --accent-color: #999999;
+    --text-color: #333333;
+    --light-text: #666666;
+    --dark-bg: #f9f9f9;
+    background-color: #ffffff;
+    color: var(--text-color);
+    font-family: 'Helvetica Neue', Arial, sans-serif;
+}
+
+
+/* Navigation - Minimalist */
+body.theme-minimalist nav {
+    background-color: rgba(255, 255, 255, 0.95);
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.05);
+    border-bottom: none;
+}
+
+body.theme-minimalist .nav-link {
+    color: var(--text-color);
+    font-weight: 400;
+    letter-spacing: 1px;
+}
+
+body.theme-minimalist .logo {
+    color: var(--primary-color);
+    font-weight: 700;
+}
+
+/* Sections - Minimalist */
+/* Minimalist Theme - Landing Page Fix */
+/* body.theme-minimalist #home {
+    background-color: #f9f9f9;
+} */
+
+body.theme-minimalist #home .canvas-container {
+    opacity: 1;
+    visibility: visible;
+}
+
+body.theme-minimalist #background-canvas {
+    display: block;
+}
+
+/* body.theme-minimalist #home .content {
+    background-color: rgba(255, 255, 255, 0.7);
+    padding: 40px;
+    border-radius: 5px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.05);
+} */
+
+body.theme-minimalist .hero-text h1 {
+    color: var(--primary-color);
+}
+
+body.theme-minimalist .hero-description {
+    color: var(--secondary-color);
+}
+
+
+/* body.theme-minimalist .section {
+    background-color: #ffffff;
+    border-bottom: 1px solid #f0f0f0;
+} */
+
+body.theme-minimalist .section-header h2 {
+    color: var(--primary-color);
+    font-weight: 300;
+    letter-spacing: 2px;
+    font-size: 3.2rem;
+}
+
+body.theme-minimalist .underline {
+    background-color: var(--accent-color);
+    height: 1px;
+    width: 50px;
+}
+
+/* About Section - Minimalist */
+body.theme-minimalist .about-content {
+    background-color: transparent;
+    box-shadow: none;
+}
+
+body.theme-minimalist .image-container {
+    border: none;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.05);
+    border-radius: 2px;
+    overflow: hidden;
+}
+
+body.theme-minimalist .personal-info .info-label {
+    color: var(--secondary-color);
+    font-weight: 500;
+}
+
+body.theme-minimalist .social-icon {
+    background-color: transparent;
+    border: 1px solid var(--accent-color);
+    color: var(--primary-color);
+}
+
+body.theme-minimalist .social-icon:hover {
+    background-color: var(--primary-color);
+    color: white;
+    transform: translateY(-3px);
+}
+
+/* Skills Section - Minimalist */
+body.theme-minimalist .skill-item {
+    background-color: white;
+    border: 1px solid #f0f0f0;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.03);
+    border-radius: 2px;
+    transition: all 0.3s ease;
+}
+
+body.theme-minimalist .skill-icon {
+    background-color: rgba(0, 0, 0, 0.03);
+    color: var(--primary-color);
+}
+
+body.theme-minimalist .skill-level {
+    background-color: var(--primary-color);
+}
+
+body.theme-minimalist .skill-item:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.05);
+}
+
+/* Experience Section - Minimalist */
+body.theme-minimalist .timeline::before {
+    background-color: #f0f0f0;
+    width: 1px;
+}
+
+body.theme-minimalist .timeline-dot {
+    background-color: white;
+    border: 1px solid var(--primary-color);
+    box-shadow: 0 0 0 4px white;
+}
+
+body.theme-minimalist .timeline-content {
+    background-color: white;
+    border: 1px solid #f0f0f0;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.03);
+    border-radius: 2px;
+}
+
+body.theme-minimalist .timeline-date {
+    color: var(--secondary-color);
+    font-weight: 500;
+}
+
+/* Projects Section - Minimalist */
+body.theme-minimalist .filter-btn {
+    background-color: transparent;
+    border: 1px solid #f0f0f0;
+    color: var(--secondary-color);
+    font-weight: 400;
+    letter-spacing: 1px;
+}
+
+body.theme-minimalist .filter-btn.active, 
+body.theme-minimalist .filter-btn:hover {
+    background-color: var(--primary-color);
+    color: white;
+    border-color: var(--primary-color);
+}
+
+body.theme-minimalist .project-card {
+    background-color: white;
+    border: 1px solid #f0f0f0;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.03);
+    border-radius: 2px;
+}
+
+body.theme-minimalist .project-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 15px 30px rgba(0, 0, 0, 0.1);
+}
+
+body.theme-minimalist .project-tech span {
+    background-color: #f9f9f9;
+    color: var(--secondary-color);
+    border-radius: 2px;
+    font-size: 1.2rem;
+}
+
+/* Research Papers - Minimalist */
+body.theme-minimalist .paper-card {
+    background-color: white;
+    border: 1px solid #f0f0f0;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.03);
+    border-radius: 2px;
+}
+
+body.theme-minimalist .paper-icon {
+    background-color: rgba(0, 0, 0, 0.03);
+    color: var(--primary-color);
+}
+
+/* Education - Minimalist */
+body.theme-minimalist .education-card {
+    background-color: white;
+    border: 1px solid #f0f0f0;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.03);
+    border-radius: 2px;
+}
+
+body.theme-minimalist .education-icon {
+    background-color: rgba(0, 0, 0, 0.03);
+    color: var(--primary-color);
+}
+
+/* Contact - Minimalist */
+body.theme-minimalist .contact-form {
+    background-color: white;
+    border: 1px solid #f0f0f0;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.03);
+    border-radius: 2px;
+}
+
+body.theme-minimalist input, 
+body.theme-minimalist textarea {
+    background-color: #f9f9f9;
+    border: 1px solid #f0f0f0;
+    border-radius: 2px;
+}
+
+body.theme-minimalist input:focus, 
+body.theme-minimalist textarea:focus {
+    border-color: var(--primary-color);
+    box-shadow: 0 0 0 2px rgba(51, 51, 51, 0.1);
+}
+
+/* Footer - Minimalist */
+body.theme-minimalist footer {
+    background-color: #f9f9f9;
+    border-top: 1px solid #f0f0f0;
+}
+
+

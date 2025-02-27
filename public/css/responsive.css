@@ -1,0 +1,110 @@
+/* Responsive Styles */
+@media screen and (max-width: 1200px) {
+    .content {
+        width: 90%;
+    }
+    
+    .hero-text h1 {
+        font-size: 5rem;
+    }
+    
+    .about-content {
+        flex-direction: column;
+    }
+    
+    .about-image, .about-text {
+        width: 100%;
+    }
+    
+    .about-image {
+        margin-bottom: 40px;
+    }
+    
+    .skills-container {
+        grid-template-columns: repeat(2, 1fr);
+    }
+    
+    .projects-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media screen and (max-width: 768px) {
+
+    
+    .hero-text h1 {
+        font-size: 4rem;
+    }
+    
+    .typing-container {
+        font-size: 2rem;
+    }
+    
+    .hero-description {
+        font-size: 1.6rem;
+    }
+    
+    .cta-buttons {
+        flex-direction: column;
+        gap: 15px;
+    }
+    
+    .primary-btn, .secondary-btn {
+        width: 100%;
+        text-align: center;
+    }
+    
+    .skills-container {
+        grid-template-columns: 1fr;
+    }
+    
+    .projects-grid {
+        grid-template-columns: 1fr;
+    }
+
+    
+    .papers-container {
+        grid-template-columns: 1fr;
+    }
+    
+    .education-cards {
+        flex-direction: column;
+    }
+    
+    .education-card {
+        width: 100%;
+        margin-bottom: 30px;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .section {
+        padding: 80px 5%;
+    }
+    
+    .section-header h2 {
+        font-size: 3rem;
+    }
+    
+    .hero-text h1 {
+        font-size: 3.2rem;
+    }
+    
+    .typing-container {
+        font-size: 1.8rem;
+    }
+    
+    .project-filters {
+        flex-wrap: wrap;
+    }
+    
+    .filter-btn {
+        margin-bottom: 10px;
+    }
+    
+    .contact-form {
+        padding: 20px;
+    }
+}
+
+
