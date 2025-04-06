@@ -74,8 +74,6 @@ git clone https://github.com/sree-charan/website
 cd website
 cd public
 
-# Install dependencies (if using npm)
-
 ```
 
 ## 📂 Project Structure
