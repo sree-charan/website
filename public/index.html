@@ -13,6 +13,15 @@
     <script src="https://cdn.jsdelivr.net/npm/gsap@3.11.5/dist/gsap.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/gsap@3.11.5/dist/ScrollTrigger.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/particles.js@2.0.0/particles.min.js"></script>
+    <!-- Google tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-6GH4CP9MDH"></script>
+    <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+
+    gtag('config', 'G-6GH4CP9MDH');
+    </script>
 </head>
 <body>
     <div id="loading-screen">
@@ -92,7 +101,7 @@
                 <div class="about-image">
                     <div class="image-container">
                         <div class="image-3d-container">
-                            <img src="assets/pic.jpg" alt="Sree Charan Reddy">
+                            <img src="assets/pic1.jpg" alt="Sree Charan Reddy">
                         </div>
                     </div>
                 </div>
@@ -133,8 +142,263 @@
                 <div class="underline"></div>
             </div>
             <div class="content skills-content">
-                <div class="skill-category">
-                    <h3>Programming Languages</h3>
+                <div class="skills-filter">
+                    <button class="skills-filter-btn active" data-category="cybersecurity">Security</button>
+                    <button class="skills-filter-btn" data-category="programming">Programming</button>
+                    <button class="skills-filter-btn" data-category="web">Web</button>
+                    <button class="skills-filter-btn" data-category="database">DB & Cloud</button>
+                    <button class="skills-filter-btn" data-category="ai">AI/ML</button>
+                </div>
+
+                <!-- Cybersecurity & Networking -->
+                <div class="skill-category active" id="category-cybersecurity">
+                    <div class="skills-container">
+                        <!-- ...existing cybersecurity skill items... -->
+                        <div class="skill-item" data-skill="Kali Linux">
+                            <div class="skill-icon">
+                                <i class="fas fa-laptop-code"></i>
+                            </div>
+                            <div class="skill-info">
+                                <h4>Kali Linux</h4>
+                                <div class="skill-bar">
+                                    <div class="skill-level" style="width: 85%"></div>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="skill-item" data-skill="Wireshark">
+                            <div class="skill-icon">
+                                <i class="fas fa-wifi"></i>
+                            </div>
+                            <div class="skill-info">
+                                <h4>Wireshark</h4>
+                                <div class="skill-bar">
+                                    <div class="skill-level" style="width: 80%"></div>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="skill-item" data-skill="Burp Suite">
+                            <div class="skill-icon">
+                                <i class="fas fa-shield-alt"></i>
+                            </div>
+                            <div class="skill-info">
+                                <h4>Burp Suite</h4>
+                                <div class="skill-bar">
+                                    <div class="skill-level" style="width: 80%"></div>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="skill-item" data-skill="Metasploit">
+                            <div class="skill-icon">
+                                <i class="fas fa-user-shield"></i>
+                            </div>
+                            <div class="skill-info">
+                                <h4>Metasploit</h4>
+                                <div class="skill-bar">
+                                    <div class="skill-level" style="width: 75%"></div>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="skill-item" data-skill="Nmap">
+                            <div class="skill-icon">
+                                <i class="fas fa-search"></i>
+                            </div>
+                            <div class="skill-info">
+                                <h4>Nmap</h4>
+                                <div class="skill-bar">
+                                    <div class="skill-level" style="width: 80%"></div>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="skill-item" data-skill="Snort">
+                            <div class="skill-icon">
+                                <i class="fas fa-bell"></i>
+                            </div>
+                            <div class="skill-info">
+                                <h4>Snort</h4>
+                                <div class="skill-bar">
+                                    <div class="skill-level" style="width: 75%"></div>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="skill-item" data-skill="OpenVAS">
+                            <div class="skill-icon">
+                                <i class="fas fa-shield-alt"></i>
+                            </div>
+                            <div class="skill-info">
+                                <h4>OpenVAS</h4>
+                                <div class="skill-bar">
+                                    <div class="skill-level" style="width: 70%"></div>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="skill-item" data-skill="Nessus">
+                            <div class="skill-icon">
+                                <i class="fas fa-shield-alt"></i>
+                            </div>
+                            <div class="skill-info">
+                                <h4>Nessus</h4>
+                                <div class="skill-bar">
+                                    <div class="skill-level" style="width: 80%"></div>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="skill-item" data-skill="John the Ripper">
+                            <div class="skill-icon">
+                                <i class="fas fa-key"></i>
+                            </div>
+                            <div class="skill-info">
+                                <h4>John the Ripper</h4>
+                                <div class="skill-bar">
+                                    <div class="skill-level" style="width: 75%"></div>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="skill-item" data-skill="Aircrack-ng">
+                            <div class="skill-icon">
+                                <i class="fas fa-wifi"></i>
+                            </div>
+                            <div class="skill-info">
+                                <h4>Aircrack-ng</h4>
+                                <div class="skill-bar">
+                                    <div class="skill-level" style="width: 70%"></div>
+                                </div>
+                            </div>
+                        </div>
+    
+                        <div class="skill-item" data-skill="Autopsy">
+                            <div class="skill-icon">
+                                <i class="fas fa-search"></i>
+                            </div>
+                            <div class="skill-info">
+                                <h4>Autopsy</h4>
+                                <div class="skill-bar">
+                                    <div class="skill-level" style="width: 80%"></div>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="skill-item" data-skill="FTK Imager">
+                            <div class="skill-icon">
+                                <i class="fas fa-hdd"></i>
+                            </div>
+                            <div class="skill-info">
+                                <h4>FTK Imager</h4>
+                                <div class="skill-bar">
+                                    <div class="skill-level" style="width: 75%"></div>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="skill-item" data-skill="Sleuth Kit">
+                            <div class="skill-icon">
+                                <i class="fas fa-search"></i>
+                            </div>
+                            <div class="skill-info">
+                                <h4>Sleuth Kit</h4>
+                                <div class="skill-bar">
+                                    <div class="skill-level" style="width: 80%"></div>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="skill-item" data-skill="X1 Social Discovery">
+                            <div class="skill-icon">
+                                <i class="fas fa-users"></i>
+                            </div>
+                            <div class="skill-info">
+                                <h4>X1 Social Discovery</h4>
+                                <div class="skill-bar">
+                                    <div class="skill-level" style="width: 70%"></div>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="skill-item" data-skill="EnCase Forensic">
+                            <div class="skill-icon">
+                                <i class="fas fa-hdd"></i>
+                            </div>
+                            <div class="skill-info">
+                                <h4>EnCase Forensic</h4>
+                                <div class="skill-bar">
+                                    <div class="skill-level" style="width: 85%"></div>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="skill-item" data-skill="Cellebrite UFED">
+                            <div class="skill-icon">
+                                <i class="fas fa-mobile-alt"></i>
+                            </div>
+                            <div class="skill-info">
+                                <h4>Cellebrite UFED</h4>
+                                <div class="skill-bar">
+                                    <div class="skill-level" style="width: 80%"></div>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="skill-item" data-skill="Magnet AXIOM">
+                            <div class="skill-icon">
+                                <i class="fas fa-magnet"></i>
+                            </div>
+                            <div class="skill-info">
+                                <h4>Magnet AXIOM</h4>
+                                <div class="skill-bar">
+                                    <div class="skill-level" style="width: 75%"></div>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="skill-item" data-skill="OSForensics">
+                            <div class="skill-icon">
+                                <i class="fas fa-laptop-code"></i>
+                            </div>
+                            <div class="skill-info">
+                                <h4>OSForensics</h4>
+                                <div class="skill-bar">
+                                    <div class="skill-level" style="width: 80%"></div>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="skill-item" data-skill="XRY">
+                            <div class="skill-icon">
+                                <i class="fas fa-mobile-alt"></i>
+                            </div>
+                            <div class="skill-info">
+                                <h4>XRY</h4>
+                                <div class="skill-bar">
+                                    <div class="skill-level" style="width: 75%"></div>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="skill-item" data-skill="Wireshark">
+                            <div class="skill-icon">
+                                <i class="fas fa-wifi"></i>
+                            </div>
+                            <div class="skill-info">
+                                <h4>Wireshark</h4>
+                                <div class="skill-bar">
+                                    <div class="skill-level" style="width: 85%"></div>
+                                </div>
+                            </div>
+                        </div>
+                        
+                    </div>
+                </div>
+
+                <!-- Programming Languages -->
+                <div class="skill-category" id="category-programming">
                     <div class="skills-container">
                         <div class="skill-item" data-skill="Python">
                             <div class="skill-icon">
@@ -223,8 +487,8 @@
                     </div>
                 </div>
                 
-                <div class="skill-category">
-                    <h3>Web Development</h3>
+                <!-- Web Development -->
+                <div class="skill-category" id="category-web">
                     <div class="skills-container">
                         <div class="skill-item" data-skill="HTML5">
                             <div class="skill-icon">
@@ -396,8 +660,15 @@
                     </div>
                 </div>
                 
-                <div class="skill-category">
-                    <h3>Database & Cloud</h3>
+                <!-- Backend Development -->
+                <div class="skill-category" id="category-backend">
+                    <div class="skills-container">
+                        <!-- ...existing backend development skill items... -->
+                    </div>
+                </div>
+                
+                <!-- Database & Cloud -->
+                <div class="skill-category" id="category-database">
                     <div class="skills-container">
                         <div class="skill-item" data-skill="MySQL">
                             <div class="skill-icon">
@@ -521,8 +792,15 @@
                     </div>
                 </div>
                 
-                <div class="skill-category">
-                    <h3>AI/ML & Other Tools</h3>
+                <!-- DevOps & CI/CD -->
+                <div class="skill-category" id="category-devops">
+                    <div class="skills-container">
+                        <!-- ...existing DevOps skill items... -->
+                    </div>
+                </div>
+                
+                <!-- AI/ML & Tools -->
+                <div class="skill-category" id="category-ai">
                     <div class="skills-container">
                         <div class="skill-item" data-skill="TensorFlow">
                             <div class="skill-icon">
@@ -645,254 +923,6 @@
                         </div>                        
                 </div>
             </div>
-
-
-            <div class="skill-category">
-                <h3>Cybersecurity & Networking</h3>
-                <div class="skills-container">
-                    <div class="skill-item" data-skill="Kali Linux">
-                        <div class="skill-icon">
-                            <i class="fas fa-laptop-code"></i>
-                        </div>
-                        <div class="skill-info">
-                            <h4>Kali Linux</h4>
-                            <div class="skill-bar">
-                                <div class="skill-level" style="width: 85%"></div>
-                            </div>
-                        </div>
-                    </div>
-                    
-                    <div class="skill-item" data-skill="Wireshark">
-                        <div class="skill-icon">
-                            <i class="fas fa-wifi"></i>
-                        </div>
-                        <div class="skill-info">
-                            <h4>Wireshark</h4>
-                            <div class="skill-bar">
-                                <div class="skill-level" style="width: 80%"></div>
-                            </div>
-                        </div>
-                    </div>
-                    
-                    <div class="skill-item" data-skill="Burp Suite">
-                        <div class="skill-icon">
-                            <i class="fas fa-shield-alt"></i>
-                        </div>
-                        <div class="skill-info">
-                            <h4>Burp Suite</h4>
-                            <div class="skill-bar">
-                                <div class="skill-level" style="width: 80%"></div>
-                            </div>
-                        </div>
-                    </div>
-                    
-                    <div class="skill-item" data-skill="Metasploit">
-                        <div class="skill-icon">
-                            <i class="fas fa-user-shield"></i>
-                        </div>
-                        <div class="skill-info">
-                            <h4>Metasploit</h4>
-                            <div class="skill-bar">
-                                <div class="skill-level" style="width: 75%"></div>
-                            </div>
-                        </div>
-                    </div>
-                    
-                    <div class="skill-item" data-skill="Nmap">
-                        <div class="skill-icon">
-                            <i class="fas fa-search"></i>
-                        </div>
-                        <div class="skill-info">
-                            <h4>Nmap</h4>
-                            <div class="skill-bar">
-                                <div class="skill-level" style="width: 80%"></div>
-                            </div>
-                        </div>
-                    </div>
-                    
-                    <div class="skill-item" data-skill="Snort">
-                        <div class="skill-icon">
-                            <i class="fas fa-bell"></i>
-                        </div>
-                        <div class="skill-info">
-                            <h4>Snort</h4>
-                            <div class="skill-bar">
-                                <div class="skill-level" style="width: 75%"></div>
-                            </div>
-                        </div>
-                    </div>
-                    
-                    <div class="skill-item" data-skill="OpenVAS">
-                        <div class="skill-icon">
-                            <i class="fas fa-shield-alt"></i>
-                        </div>
-                        <div class="skill-info">
-                            <h4>OpenVAS</h4>
-                            <div class="skill-bar">
-                                <div class="skill-level" style="width: 70%"></div>
-                            </div>
-                        </div>
-                    </div>
-                    
-                    <div class="skill-item" data-skill="Nessus">
-                        <div class="skill-icon">
-                            <i class="fas fa-shield-alt"></i>
-                        </div>
-                        <div class="skill-info">
-                            <h4>Nessus</h4>
-                            <div class="skill-bar">
-                                <div class="skill-level" style="width: 80%"></div>
-                            </div>
-                        </div>
-                    </div>
-                    
-                    <div class="skill-item" data-skill="John the Ripper">
-                        <div class="skill-icon">
-                            <i class="fas fa-key"></i>
-                        </div>
-                        <div class="skill-info">
-                            <h4>John the Ripper</h4>
-                            <div class="skill-bar">
-                                <div class="skill-level" style="width: 75%"></div>
-                            </div>
-                        </div>
-                    </div>
-                    
-                    <div class="skill-item" data-skill="Aircrack-ng">
-                        <div class="skill-icon">
-                            <i class="fas fa-wifi"></i>
-                        </div>
-                        <div class="skill-info">
-                            <h4>Aircrack-ng</h4>
-                            <div class="skill-bar">
-                                <div class="skill-level" style="width: 70%"></div>
-                            </div>
-                        </div>
-                    </div>
-    
-                    <div class="skill-item" data-skill="Autopsy">
-                        <div class="skill-icon">
-                            <i class="fas fa-search"></i>
-                        </div>
-                        <div class="skill-info">
-                            <h4>Autopsy</h4>
-                            <div class="skill-bar">
-                                <div class="skill-level" style="width: 80%"></div>
-                            </div>
-                        </div>
-                    </div>
-                    
-                    <div class="skill-item" data-skill="FTK Imager">
-                        <div class="skill-icon">
-                            <i class="fas fa-hdd"></i>
-                        </div>
-                        <div class="skill-info">
-                            <h4>FTK Imager</h4>
-                            <div class="skill-bar">
-                                <div class="skill-level" style="width: 75%"></div>
-                            </div>
-                        </div>
-                    </div>
-                    
-                    <div class="skill-item" data-skill="Sleuth Kit">
-                        <div class="skill-icon">
-                            <i class="fas fa-search"></i>
-                        </div>
-                        <div class="skill-info">
-                            <h4>Sleuth Kit</h4>
-                            <div class="skill-bar">
-                                <div class="skill-level" style="width: 80%"></div>
-                            </div>
-                        </div>
-                    </div>
-                    
-                    <div class="skill-item" data-skill="X1 Social Discovery">
-                        <div class="skill-icon">
-                            <i class="fas fa-users"></i>
-                        </div>
-                        <div class="skill-info">
-                            <h4>X1 Social Discovery</h4>
-                            <div class="skill-bar">
-                                <div class="skill-level" style="width: 70%"></div>
-                            </div>
-                        </div>
-                    </div>
-                    
-                    <div class="skill-item" data-skill="EnCase Forensic">
-                        <div class="skill-icon">
-                            <i class="fas fa-hdd"></i>
-                        </div>
-                        <div class="skill-info">
-                            <h4>EnCase Forensic</h4>
-                            <div class="skill-bar">
-                                <div class="skill-level" style="width: 85%"></div>
-                            </div>
-                        </div>
-                    </div>
-                    
-                    <div class="skill-item" data-skill="Cellebrite UFED">
-                        <div class="skill-icon">
-                            <i class="fas fa-mobile-alt"></i>
-                        </div>
-                        <div class="skill-info">
-                            <h4>Cellebrite UFED</h4>
-                            <div class="skill-bar">
-                                <div class="skill-level" style="width: 80%"></div>
-                            </div>
-                        </div>
-                    </div>
-                    
-                    <div class="skill-item" data-skill="Magnet AXIOM">
-                        <div class="skill-icon">
-                            <i class="fas fa-magnet"></i>
-                        </div>
-                        <div class="skill-info">
-                            <h4>Magnet AXIOM</h4>
-                            <div class="skill-bar">
-                                <div class="skill-level" style="width: 75%"></div>
-                            </div>
-                        </div>
-                    </div>
-                    
-                    <div class="skill-item" data-skill="OSForensics">
-                        <div class="skill-icon">
-                            <i class="fas fa-laptop-code"></i>
-                        </div>
-                        <div class="skill-info">
-                            <h4>OSForensics</h4>
-                            <div class="skill-bar">
-                                <div class="skill-level" style="width: 80%"></div>
-                            </div>
-                        </div>
-                    </div>
-                    
-                    <div class="skill-item" data-skill="XRY">
-                        <div class="skill-icon">
-                            <i class="fas fa-mobile-alt"></i>
-                        </div>
-                        <div class="skill-info">
-                            <h4>XRY</h4>
-                            <div class="skill-bar">
-                                <div class="skill-level" style="width: 75%"></div>
-                            </div>
-                        </div>
-                    </div>
-                    
-                    <div class="skill-item" data-skill="Wireshark">
-                        <div class="skill-icon">
-                            <i class="fas fa-wifi"></i>
-                        </div>
-                        <div class="skill-info">
-                            <h4>Wireshark</h4>
-                            <div class="skill-bar">
-                                <div class="skill-level" style="width: 85%"></div>
-                            </div>
-                        </div>
-                    </div>
-                    
-                </div>
-            </div>
-        </div>
         </section>
 
         <!-- Experience Section -->
@@ -901,7 +931,7 @@
                 <h2>Companies I’ve Helped Level Up</h2>
                 <div class="underline"></div>
             </div>
-            <div class="content">
+            <div class="content"></div>
                 <div class="timeline">
                     <div class="timeline-item">
                         <div class="timeline-dot"></div>
@@ -961,9 +991,6 @@
                 </div>
                 <div class="projects-grid">
                     <div class="project-card" data-category="security">
-                        <div class="project-image">
-                            <img src="assets/1.png" alt="OSINT Web Application">
-                        </div>
                         <div class="project-content">
                             <h3>OSINT Web Application for Social Media Intelligence</h3>
                             <p>Created an OSINT tool to analyze public data from Instagram, Twitter, Reddit, and YouTube. Integrated keyword tracking, user behavior analysis, and sentiment detection for efficient research. Developed interactive dashboards for investigators to visualize trends and monitor user activity.</p>
@@ -980,9 +1007,6 @@
                     </div>
 
                     <div class="project-card" data-category="security">
-                        <div class="project-image">
-                            <img src="assets/2.png" alt="AI Cybersecurity Threat Detection">
-                        </div>
                         <div class="project-content">
                             <h3>AI for Cybersecurity: Threat Detection using ML</h3>
                             <p>Built an AI-driven Intrusion Detection System (IDS) to detect malicious network traffic. Achieved ~90% accuracy in identifying anomalies through large-scale network log analysis. Used anomaly detection algorithms to uncover zero-day threats.</p>
@@ -999,9 +1023,6 @@
                     </div>
 
                     <div class="project-card" data-category="security">
-                        <div class="project-image">
-                            <img src="assets/3.png" alt="Forensic Investigation & Evidence Analysis">
-                        </div>
                         <div class="project-content">
                             <h3>Forensic Investigation & Evidence Analysis</h3>
                             <p>Performed digital forensic investigations on USB drives, hard disks, and email headers. Utilized Wireshark to spot suspicious network traffic and unauthorized data transmissions. Preserved evidence integrity and produced forensic reports in compliance with legal standards.</p>
@@ -1018,9 +1039,6 @@
                     </div>
 
                     <div class="project-card" data-category="security">
-                        <div class="project-image">
-                            <img src="assets/4.png" alt="Active Cyber Defense & Incident Response">
-                        </div>
                         <div class="project-content">
                             <h3>Active Cyber Defense & Incident Response Simulation</h3>
                             <p>Conducted a Red-Team/Blue-Team simulation to mimic real-world cyberattacks. Integrated Splunk dashboards for real-time intrusion detection and alert generation. Leveraged the MITRE ATT&CK framework to enhance threat hunting and incident response.</p>
@@ -1037,9 +1055,6 @@
                     </div>
 
                     <div class="project-card" data-category="ai">
-                        <div class="project-image">
-                            <img src="assets/5.png" alt="Text Humanizer Tool">
-                        </div>
                         <div class="project-content">
                             <h3>Text Humanizer – AI-Powered Text Refinement Tool</h3>
                             <p>Created an NLP-based tool for improving text readability and professionalism. Implemented semantic analysis and synonym recommendations to refine security documentation. Added grammatical error correction, resulting in clear and natural-sounding outputs.</p>
@@ -1055,9 +1070,6 @@
                     </div>
 
                     <div class="project-card" data-category="ai">
-                        <div class="project-image">
-                            <img src="assets/6.png" alt="Text-to-Video AI Generator">
-                        </div>
                         <div class="project-content">
                             <h3>Text-to-Video AI Generator</h3>
                             <p>Developed a deep-learning model to transform plain text into AI-generated video content. Integrated speech synthesis, background imagery, and animated transitions for engaging output. Optimized for large-scale content generation with minimal performance bottlenecks.</p>
@@ -1074,9 +1086,6 @@
                     </div>
 
                     <div class="project-card" data-category="ai">
-                        <div class="project-image">
-                            <img src="assets/10.png" alt="AI Blog Generator">
-                        </div>
                         <div class="project-content">
                             <h3>AI Blog Generator</h3>
                             <p>Built an AI-powered blogging system that creates complete blog posts on specified topics. Utilized Google’s GenAI and Blogger API for automated publishing and content updates. Incorporated Pexels API to fetch relevant images, ensuring visually appealing posts.</p>
@@ -1094,9 +1103,7 @@
                     </div>
 
                     <div class="project-card" data-category="ai">
-                        <div class="project-image">
-                            <img src="assets/7.png" alt="Autonomeus AI System">
-                        </div>
+                        
                         <div class="project-content">
                             <h3>Autonomeus – AI Self-Governance System (In Progress)</h3>
                             <p>Researching an autonomous AI framework capable of self-improvement via feedback analysis. Exploring self-learning algorithms for minimal human intervention. Investigating AI-driven decision-making for business workflow automation and AI-based journalism.</p>
@@ -1113,9 +1120,7 @@
                     </div>
 
                     <div class="project-card" data-category="web">
-                        <div class="project-image">
-                            <img src="assets/8.png" alt="SyncWrite Text Editor">
-                        </div>
+                        
                         <div class="project-content">
                             <h3>SyncWrite – Real-Time Collaborative Text Editor</h3>
                             <p>Developed a multi-user text editor with simultaneous, real-time editing. Implemented role-based access control for enhanced document security. Optimized synchronization to reduce latency and improve the user experience.</p>
@@ -1133,9 +1138,7 @@
                     </div>
 
                     <div class="project-card" data-category="web">
-                        <div class="project-image">
-                            <img src="assets/9.png" alt="CertifyMe Certificate System">
-                        </div>
+                        
                         <div class="project-content">
                             <h3>CertifyMe – Automated Certificate Generation System</h3>
                             <p>Designed a secure platform to generate, sign, and distribute event certificates. Leveraged Google Apps Script to incorporate dynamic data fields and prevent tampering. Streamlined bulk certificate issuance, expediting large-scale events.</p>
@@ -1153,9 +1156,7 @@
                     </div>
 
                     <div class="project-card" data-category="web">
-                        <div class="project-image">
-                            <img src="assets/13.png" alt="SafeTest COVID System">
-                        </div>
+                        
                         <div class="project-content">
                             <h3>SafeTest – COVID Management System</h3>
                             <p>Created a secure portal for managing COVID test results, patient records, and lab reports. Implemented encryption and multi-role authentication for protected access. Centralized data to reduce turnaround times for retrieving and processing test results.</p>
@@ -1173,9 +1174,7 @@
                     </div>
 
                     <div class="project-card" data-category="web">
-                        <div class="project-image">
-                            <img src="assets/14.png" alt="Neura WhatsApp Bot">
-                        </div>
+                        
                         <div class="project-content">
                             <h3>Neura – WhatsApp Automation Bot</h3>
                             <p>Built a WhatsApp bot for everyday automation tasks (media downloads, stickers/GIF generation, news, weather, etc.). Deployed modular commands, offering customizable workflows for personal and business needs.</p>
@@ -1192,9 +1191,7 @@
                     </div>
 
                     <div class="project-card" data-category="ai">
-                        <div class="project-image">
-                            <img src="assets/12.png" alt="ResuMagic Resume Generator">
-                        </div>
+                        
                         <div class="project-content">
                             <h3>AI-Powered Resume Generator</h3>
                             <p>Built an AI-enabled resume generator for fast, user-friendly resume creation. Combined Google Forms for interactive data input and template-based formatting for ATS-friendly resumes. Ensured secure data handling, safeguarding user information throughout the generation process.</p>
@@ -1211,9 +1208,7 @@
                     </div>
 
                     <div class="project-card" data-category="security">
-                        <div class="project-image">
-                            <img src="assets/11.png" alt="Telegram Security Bot">
-                        </div>
+                        
                         <div class="project-content">
                             <h3>Telegram Security Bot</h3>
                             <p>Developed a real-time cybersecurity alert bot to monitor and report active threats. Integrated threat intelligence feeds for instant security updates. Secured API handling and data transmission to prevent unauthorized bot access.</p>
@@ -1230,9 +1225,7 @@
                     </div>
 
                     <div class="project-card" data-category="web">
-                        <div class="project-image">
-                            <img src="assets/15.png" alt="OpenJobs Platform">
-                        </div>
+                       
                         <div class="project-content">
                             <h3>OpenJobs Platform</h3>
                             <p>OpenJobs is an open-source job platform designed to connect job seekers and employers. It features core functionalities like user authentication and job management, with plans for advanced AI matching and employer tools. The platform aims to build a strong community through open-source contributions, while addressing scalability and data processing challenges.</p>
@@ -1251,9 +1244,7 @@
                     </div>
 
                     <div class="project-card" data-category="web">
-                        <div class="project-image">
-                            <img src="assets/16.png" alt="Personal Portfolio">
-                        </div>
+                        
                         <div class="project-content">
                             <h3>Personal Portfolio Website</h3>
                             <p>Developed a dynamic and interactive personal portfolio to showcase my skills and projects. The portfolio features a modern design and incorporates 3D elements for an engaging user experience.</p>
@@ -1283,7 +1274,8 @@
                 <h2>Ideas, Theories, and Breakthroughs</h2>
                 <div class="underline"></div>
             </div>
-            <div class="content">
+            
+            <div class="content"></div>
                 <div class="papers-container">
                     <div class="paper-card">
                         <div class="paper-icon">
@@ -1404,7 +1396,7 @@
     </footer>
 
 
-    <!-- Add this to your HTML, just before the closing body tag -->
+    <!-- Theme Switcher -->
 <div class="theme-toggle-sticky">
     <div class="theme-toggle-icon">
         <i class="fas fa-palette"></i>

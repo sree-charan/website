@@ -1,3 +1,4 @@
+
 // Theme-specific particle configurations
 function getParticlesConfig(theme) {
     let config = {};

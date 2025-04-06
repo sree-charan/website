@@ -21,7 +21,7 @@
     }
     
     .skills-container {
-        grid-template-columns: repeat(2, 1fr);
+        grid-template-columns: repeat(3, 1fr);
     }
     
     .projects-grid {
@@ -55,7 +55,7 @@
     }
     
     .skills-container {
-        grid-template-columns: 1fr;
+        grid-template-columns: repeat(2, 1fr);
     }
     
     .projects-grid {
@@ -74,6 +74,16 @@
     .education-card {
         width: 100%;
         margin-bottom: 30px;
+    }
+    
+    .skills-filter {
+        flex-wrap: wrap;
+        gap: 8px;
+    }
+    
+    .skills-filter-btn {
+        padding: 6px 12px;
+        font-size: 1.5rem;
     }
 }
 
@@ -104,6 +114,15 @@
     
     .contact-form {
         padding: 20px;
+    }
+    
+    .skills-container {
+        grid-template-columns: 1fr;
+    }
+    
+    .skills-filter-btn {
+        padding: 5px 10px;
+        font-size: 1.5rem;
     }
 }
 

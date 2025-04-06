@@ -124,7 +124,7 @@ function initializeWebsite() {
     initTypingEffect();
     
     // Initialize scroll animations
-    initScrollAnimations();
+    // initScrollAnimations();
     
     // Add event listeners
     addEventListeners();
@@ -540,7 +540,73 @@ function enhanceNavigation() {
     });
 }
 
+// Skills filter functionality
+function initSkillsFilter() {
+    const filterButtons = document.querySelectorAll('.skills-filter-btn');
+    const skillCategories = document.querySelectorAll('.skill-category');
+    
+    // Show first category by default
+    document.querySelector('.skill-category').classList.add('active');
+    animateSkillBars(document.querySelector('.skill-category').id);
+    
+    filterButtons.forEach(button => {
+        button.addEventListener('click', () => {
+            // Remove active class from all buttons
+            filterButtons.forEach(btn => btn.classList.remove('active'));
+            
+            // Add active class to clicked button
+            button.classList.add('active');
+            
+            // Get the category to show
+            const categoryToShow = button.getAttribute('data-category');
+            
+            // Hide all categories with smooth transition
+            skillCategories.forEach(category => {
+                category.style.opacity = '0';
+                setTimeout(() => {
+                    category.classList.remove('active');
+                    if (category.id === `category-${categoryToShow}`) {
+                        category.classList.add('active');
+                        // Fade in the selected category
+                        setTimeout(() => {
+                            category.style.opacity = '1';
+                            // Animate skill bars after category is visible
+                            animateSkillBars(`category-${categoryToShow}`);
+                        }, 50);
+                    }
+                }, 200);
+            });
+        });
+    });
+}
 
+// Animate skill bars
+function animateSkillBars(categoryId) {
+    const category = document.getElementById(categoryId);
+    if (!category) return;
+    
+    const skillBars = category.querySelectorAll('.skill-level');
+    
+    skillBars.forEach(bar => {
+        const width = bar.style.width;
+        bar.style.width = '0';
+        
+        setTimeout(() => {
+            bar.style.width = width;
+        }, 50);
+    });
+}
+
+// Initialize skills filter on page load
+document.addEventListener('DOMContentLoaded', () => {
+    initSkillsFilter();
+    
+    // Animate initial skill bars
+    const activeCategory = document.querySelector('.skill-category.active');
+    if (activeCategory) {
+        animateSkillBars(activeCategory.id);
+    }
+});
 
 // Add Event Listeners
 function addEventListeners() {
@@ -657,6 +723,9 @@ if (contactForm) {
             item.classList.remove('active');
         });
     });
+
+    // Initialize skills filter
+    initSkillsFilter();
 }
 
 enhanceNavigation();
@@ -670,6 +739,9 @@ window.addEventListener('load', () => {
     if (copyrightYear) {
         copyrightYear.textContent = `© ${new Date().getFullYear()} Sree Charan Reddy. All rights reserved.`;
     }
+    
+    // Initialize skills filter
+    initSkillsFilter();
 });
 
 // Add this to your JavaScript

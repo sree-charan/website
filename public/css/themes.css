@@ -85,6 +85,23 @@ body.theme-cyberpunk .skill-level {
     box-shadow: 0 0 10px var(--secondary-color);
 }
 
+/* Cyberpunk Theme - Skills Filter */
+body.theme-cyberpunk .skills-filter-btn {
+    background-color: rgba(0, 0, 0, 0.3);
+    border: 1px solid var(--secondary-color);
+    color: var(--secondary-color);
+    text-transform: uppercase;
+    font-family: 'Orbitron', sans-serif;
+    letter-spacing: 1px;
+}
+
+body.theme-cyberpunk .skills-filter-btn.active, 
+body.theme-cyberpunk .skills-filter-btn:hover {
+    background-color: var(--secondary-color);
+    color: var(--dark-bg);
+    box-shadow: 0 0 10px var(--secondary-color);
+}
+
 /* Experience Section - Cyberpunk */
 body.theme-cyberpunk .timeline::before {
     background: linear-gradient(to bottom, var(--primary-color), var(--secondary-color));
@@ -187,12 +204,6 @@ body.theme-cyberpunk footer {
     background-color: rgba(10, 10, 30, 0.9);
     border-top: 1px solid var(--secondary-color);
 }
-
-
-
-
-
-
 
 /* Space Theme */
 body.theme-space {
@@ -319,6 +330,20 @@ body.theme-space .skill-item:hover {
     box-shadow: 0 10px 20px rgba(67, 97, 238, 0.3);
 }
 
+/* Space Theme - Skills Filter */
+body.theme-space .skills-filter-btn {
+    background-color: rgba(0, 0, 0, 0.5);
+    border: 1px solid rgba(67, 97, 238, 0.3);
+    color: var(--primary-color);
+}
+
+body.theme-space .skills-filter-btn.active, 
+body.theme-space .skills-filter-btn:hover {
+    background-color: var(--primary-color);
+    color: var(--dark-bg);
+    box-shadow: 0 0 15px var(--primary-color);
+}
+
 /* Experience Section - Space */
 body.theme-space .timeline::before {
     background: linear-gradient(to bottom, var(--primary-color), var(--accent-color));
@@ -376,7 +401,7 @@ body.theme-space .project-card:hover {
 
 body.theme-space .project-tech span {
     background-color: rgba(67, 97, 238, 0.2);
-    border: 1px solid var(--primary-color);
+    border: 1px solid var (--primary-color);
     color: var(--primary-color);
     border-radius: 20px;
 }
@@ -447,10 +472,6 @@ body.theme-space footer .social-icon {
     background-color: rgba(67, 97, 238, 0.2);
     border: 1px solid var(--primary-color);
 }
-
-
-
-
 
 /* Digital Theme */
 body.theme-digital {
@@ -571,10 +592,25 @@ body.theme-digital .skill-item:hover {
     box-shadow: 0 10px 20px rgba(78, 204, 163, 0.2);
 }
 
+/* Digital Theme - Skills Filter */
+body.theme-digital .skills-filter-btn {
+    background-color: rgba(35, 41, 49, 0.7);
+    border: 1px solid var(--primary-color);
+    color: var(--primary-color);
+    letter-spacing: 1px;
+}
+
+body.theme-digital .skills-filter-btn.active, 
+body.theme-digital .skills-filter-btn:hover {
+    background-color: var(--primary-color);
+    color: var(--secondary-color);
+    box-shadow: 0 0 15px var(--primary-color);
+}
+
 /* Experience Section - Digital */
 body.theme-digital .timeline::before {
     background-color: var(--primary-color);
-    box-shadow: 0 0 10px var(--primary-color);
+    box-shadow: 0 0 10px var (--primary-color);
 }
 
 body.theme-digital .timeline-dot {
@@ -697,10 +733,6 @@ body.theme-digital footer .social-icon {
     border: 1px solid var(--primary-color);
     color: var(--primary-color);
 }
-
-
-
-
 
 /* Surreal Theme */
 body.theme-surreal {
@@ -837,6 +869,21 @@ body.theme-surreal .skill-level {
 body.theme-surreal .skill-item:hover {
     transform: perspective(1000px) rotateX(0deg) scale(1.05);
     box-shadow: 0 10px 20px rgba(255, 119, 0, 0.3);
+}
+
+/* Surreal Theme - Skills Filter */
+body.theme-surreal .skills-filter-btn {
+    background-color: rgba(26, 26, 46, 0.7);
+    border: 1px solid var(--primary-color);
+    color: var(--primary-color);
+    border-radius: 30% 70% 70% 30% / 30% 30% 70% 70%;
+}
+
+body.theme-surreal .skills-filter-btn.active, 
+body.theme-surreal .skills-filter-btn:hover {
+    background-color: var(--primary-color);
+    color: var(--dark-bg);
+    box-shadow: 0 0 15px var(--primary-color);
 }
 
 /* Experience Section - Surreal */
@@ -988,9 +1035,6 @@ body.theme-surreal footer .social-icon {
     background: linear-gradient(45deg, var(--primary-color), var(--secondary-color));
     border-radius: 30% 70% 70% 30% / 30% 30% 70% 70%;
 }
-
-
-
 
 /* Biomimicry Theme */
 body.theme-biomimicry {
@@ -1153,6 +1197,24 @@ body.theme-biomimicry .skill-level {
 body.theme-biomimicry .skill-item:hover {
     transform: translateY(-10px);
     box-shadow: 0 15px 30px rgba(0, 0, 0, 0.2);
+}
+
+/* Biomimicry Theme - Skills Filter */
+body.theme-biomimicry .skills-filter-btn {
+    background-color: rgba(0, 0, 0, 0.2);
+    border: none;
+    border-radius: 20px;
+    color: var(--primary-color);
+    overflow: hidden;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+}
+
+body.theme-biomimicry .skills-filter-btn.active, 
+body.theme-biomimicry .skills-filter-btn:hover {
+    background-color: var(--primary-color);
+    color: var(--dark-bg);
+    transform: translateY(-3px);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
 }
 
 /* Experience Section - Biomimicry */
@@ -1318,10 +1380,6 @@ body.theme-biomimicry footer {
     background-color: rgba(20, 29, 36, 0.95);
     border-top: 2px solid var(--primary-color);
 }
-
-
-
-
 
 /* Glassmorphism Theme */
 body.theme-glassmorphism {
@@ -1510,6 +1568,22 @@ body.theme-glassmorphism .skill-item:hover {
     box-shadow: 0 15px 40px rgba(79, 172, 254, 0.3);
 }
 
+/* Glassmorphism Theme - Skills Filter */
+body.theme-glassmorphism .skills-filter-btn {
+    background: rgba(255, 255, 255, 0.1);
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+    border: 1px solid rgba(255, 255, 255, 0.18);
+    color: var(--light-text);
+    box-shadow: 0 8px 32px rgba(31, 38, 135, 0.1);
+}
+
+body.theme-glassmorphism .skills-filter-btn.active, 
+body.theme-glassmorphism .skills-filter-btn:hover {
+    background: rgba(79, 172, 254, 0.2);
+    box-shadow: 0 8px 32px rgba(79, 172, 254, 0.2);
+}
+
 /* All other sections with enhanced glass effect */
 body.theme-glassmorphism .timeline-content,
 body.theme-glassmorphism .project-card,
@@ -1570,9 +1644,6 @@ body.theme-glassmorphism footer {
     border-top: 1px solid rgba(255, 255, 255, 0.1);
     box-shadow: 0 -8px 32px 0 rgba(31, 38, 135, 0.2);
 }
-
-
-
 
 /* Neon Flux Theme */
 body.theme-neon-flux {
@@ -1716,6 +1787,26 @@ body.theme-neon-flux .skill-item:hover {
     box-shadow: 0 15px 30px rgba(0, 238, 255, 0.3);
 }
 
+/* Neon Flux Theme - Skills Filter */
+body.theme-neon-flux .skills-filter-btn {
+    background-color: rgba(0, 0, 0, 0.5);
+    border: 2px solid var(--primary-color);
+    color: var(--primary-color);
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 238, 255, 0.2);
+    backdrop-filter: blur(5px);
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+body.theme-neon-flux .skills-filter-btn.active, 
+body.theme-neon-flux .skills-filter-btn:hover {
+    background: linear-gradient(45deg, var(--primary-color), var(--secondary-color));
+    color: var(--dark-bg);
+    box-shadow: 0 0 15px var(--primary-color);
+    border-color: transparent;
+}
+
 /* Experience Section - Neon Flux */
 body.theme-neon-flux .timeline::before {
     background: linear-gradient(to bottom, var(--primary-color), var(--secondary-color));
@@ -1852,10 +1943,6 @@ body.theme-neon-flux footer .social-icon {
     color: var(--dark-bg);
 }
 
-
-
-
-
 /* Minimalist Theme */
 body.theme-minimalist {
     --primary-color: #333333;
@@ -1868,7 +1955,6 @@ body.theme-minimalist {
     color: var(--text-color);
     font-family: 'Helvetica Neue', Arial, sans-serif;
 }
-
 
 /* Navigation - Minimalist */
 body.theme-minimalist nav {
@@ -1917,7 +2003,6 @@ body.theme-minimalist .hero-text h1 {
 body.theme-minimalist .hero-description {
     color: var(--secondary-color);
 }
-
 
 /* body.theme-minimalist .section {
     background-color: #ffffff;
@@ -1988,6 +2073,22 @@ body.theme-minimalist .skill-level {
 body.theme-minimalist .skill-item:hover {
     transform: translateY(-5px);
     box-shadow: 0 10px 20px rgba(0, 0, 0, 0.05);
+}
+
+/* Minimalist Theme - Skills Filter */
+body.theme-minimalist .skills-filter-btn {
+    background-color: transparent;
+    border: 1px solid #f0f0f0;
+    color: var(--secondary-color);
+    font-weight: 400;
+    letter-spacing: 1px;
+}
+
+body.theme-minimalist .skills-filter-btn.active, 
+body.theme-minimalist .skills-filter-btn:hover {
+    background-color: var(--primary-color);
+    border-color: var(--primary-color);
+    color: white;
 }
 
 /* Experience Section - Minimalist */
